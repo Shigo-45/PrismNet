@@ -9,3 +9,7 @@ events.out*
 *.pth
 .DS_Store
 *.pdf
+data/*
+exp/*
+!exp/prismnet/
+!exp/logistic_reg/
