@@ -8,8 +8,8 @@
 
 ## PrismNet Core Package
 ### Package Structure
-- [ ] prismnet/__init__.py - Package initialization
-- [ ] prismnet/loader.py - Data loading functionality
+- [X] prismnet/__init__.py - Package initialization
+- [X] prismnet/loader.py - Data loading functionality
 - [ ] prismnet/engine/__init__.py - Engine package init
 - [ ] prismnet/engine/train_loop.py - Training loop implementation
 - [ ] prismnet/model/__init__.py - Model package init
@@ -34,15 +34,20 @@
 - [ ] motif_construct/motif_sig.R - R script for motif significance analysis
 - [ ] motif_construct/saliency_motif.pl - Perl script for saliency motif analysis
 
-## Experiments (Representative Sample)
-- [ ] exp/logistic_reg/ - Logistic regression experiment (representative for all exp/)
+## Experiments scripts
+- [ ] exp/logistic_reg/ - Logistic regression experiment 
   - [ ] gdata.py - Data generation for logistic regression
   - [ ] main.py - Main logistic regression implementation
   - [ ] run.sh - Execution script for logistic regression
 
-## Experiment Scripts (PrismNet representative)
-- [ ] exp/prismnet/train.sh - Training script (representative for exp/prismnet/ scripts)
-- [ ] exp/train_one/train.sh - Single training script (representative for exp/train_one/ scripts)
+- [X] exp/prismnet/train.sh - Training script for single protein
+- [X] exp/prismnet/train_all.sh - Training script for all proteins
+- [X] exp/prismnet/eval.sh - Evaluation script for trained models
+- [X] exp/prismnet/infer.sh - Inference script for new data predictions
+- [X] exp/prismnet/saliency.sh - Saliency map computation script
+- [X] exp/prismnet/saliencyimg.sh - Saliency visualization generation script
+- [X] exp/prismnet/saliencyimg_infer.sh - Saliency visualization for inference data
+- [X] exp/prismnet/har.sh - High attention regions computation script
 
 ## Understanding Notes
 - Focus on understanding the purpose and functionality of each component
