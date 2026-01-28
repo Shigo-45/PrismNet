@@ -15,7 +15,7 @@
 - [ ] prismnet/model/__init__.py - Model package init
 - [ ] prismnet/model/PrismNet.py - Main PrismNet model architecture
 - [ ] prismnet/model/resnet.py - ResNet implementation for PrismNet
-- [ ] prismnet/model/se.py - Squeeze-and-Excitation modules
+- [X] prismnet/model/se.py - Squeeze-and-Excitation modules
 - [ ] prismnet/model/smoothgrad.py - SmoothGrad implementation for interpretability
 - [ ] prismnet/model/utils.py - Model utility functions
 - [ ] prismnet/utils/__init__.py - Utils package init
