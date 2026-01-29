@@ -186,7 +186,7 @@ def main():
         for epoch in range(1, args.nepochs + 1):
             t_met       = train(args, model, device, train_loader, criterion, optimizer)
             v_met, _, _ = validate(args, model, device, test_loader, criterion)
-            scheduler.step(epoch)
+            scheduler.step()
             lr = scheduler.get_lr()[0]
             color_best='green'
             if best_auc < v_met.auc:
