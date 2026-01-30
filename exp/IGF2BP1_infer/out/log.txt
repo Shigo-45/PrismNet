@@ -1,0 +1,19 @@
+Namespace(arch='PrismNet', batch_size=64, data_dir='data', early_stopping=20, eval=False, eval_test=False, exp_name='prismnet', har=False, infer=True, infer_file='data/clip_data/IGF2BP1_HepG2.tsv', infer_test=False, load_best=True, log_interval=100, lr=0.0001, lr_scheduler='warmup', mode='pu', nepochs=200, no_cuda=False, out_dir='exp/prismnet', p_name='IGF2BP1_K562', pos_weight=2, saliency=False, saliency_img=False, seed=1024, tfboard=False, train=False, weight_decay=1e-06, workers=2)
+making directory: exp/prismnet
+making directory: exp/prismnet/out/
+making directory: exp/prismnet
+making directory: exp/prismnet/out/models
+Network Arch: PrismNet
+===========================
+Total params: 58189
+Trainable params: 58189
+Non-trainable params: 0
+===========================
+Loading model: exp/prismnet/out/models/IGF2BP1_K562_PrismNet_pu_best.pth
+Reading inference file: data/clip_data/IGF2BP1_HepG2.tsv
+Saving into npz.
+Saved.
+infer data:  11677  use_structure:  True
+making directory: exp/prismnet
+making directory: exp/prismnet/out/infer
+Prediction file: exp/prismnet/out/infer/IGF2BP1_K562_PrismNet_pu_IGF2BP1_HepG2.tsv.probs
