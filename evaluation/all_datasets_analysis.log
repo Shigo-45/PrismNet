@@ -1,0 +1,3101 @@
+
+================================================================================
+Processing: AARS_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.446
+  Mean identity: 0.254
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: AATF_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.446
+  Mean identity: 0.258
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: ABCF1_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.455
+  Mean identity: 0.254
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: AGGF1_HepG2.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.455
+  Mean identity: 0.258
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: AGO_HEK293.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.465
+  Mean identity: 0.254
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: AKAP1_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.475
+  Mean identity: 0.255
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: AKAP8L_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.465
+  Mean identity: 0.257
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: ALKBH5_HEK293.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 10547 train and 2635 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 10547
+  Test sequences: 2635
+  Max identity: 0.446
+  Mean identity: 0.253
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: APOBEC3C_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.465
+  Mean identity: 0.255
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: AQR_HepG2.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.455
+  Mean identity: 0.259
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: ATXN2_HEK293T.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.703
+  Mean identity: 0.257
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: AUH_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.495
+  Mean identity: 0.259
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: BCCIP_HepG2.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.693
+  Mean identity: 0.257
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: BCLAF1_HepG2.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.455
+  Mean identity: 0.257
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: BUD13_HepG2.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.455
+  Mean identity: 0.262
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: C17ORF85_HEK293.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.822
+  Mean identity: 0.255
+  Pairs above 0.8: 1 (0.01%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: C22ORF28_HEK293.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.832
+  Mean identity: 0.255
+  Pairs above 0.8: 1 (0.01%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: CAPRIN1_HEK293.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.455
+  Mean identity: 0.253
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: CDC40_HepG2.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.436
+  Mean identity: 0.259
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: CPEB4_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.465
+  Mean identity: 0.252
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: CPSF1_HEK293.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.436
+  Mean identity: 0.254
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: CPSF2_HEK293.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 4203 train and 1050 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 4203
+  Test sequences: 1050
+  Max identity: 0.812
+  Mean identity: 0.253
+  Pairs above 0.8: 1 (0.01%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: CPSF3_HEK293.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.475
+  Mean identity: 0.253
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: CPSF4_HEK293.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.446
+  Mean identity: 0.252
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: CPSF6_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.624
+  Mean identity: 0.252
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: CPSF7_HEK293.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.446
+  Mean identity: 0.256
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: CSTF2T_HepG2.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.446
+  Mean identity: 0.263
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: CSTF2_Hela.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.446
+  Mean identity: 0.251
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: DDX21_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.455
+  Mean identity: 0.256
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: DDX24_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.891
+  Mean identity: 0.258
+  Pairs above 0.8: 1 (0.01%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: DDX3X_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.446
+  Mean identity: 0.256
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: DDX42_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.703
+  Mean identity: 0.254
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: DDX51_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.495
+  Mean identity: 0.259
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: DDX52_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.465
+  Mean identity: 0.257
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: DDX55_HepG2.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.475
+  Mean identity: 0.257
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: DDX59_HepG2.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.485
+  Mean identity: 0.260
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: DDX6_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.446
+  Mean identity: 0.254
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: DGCR8_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.436
+  Mean identity: 0.254
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: DHX30_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.446
+  Mean identity: 0.258
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: DKC1_HepG2.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 11972 train and 2993 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 11972
+  Test sequences: 2993
+  Max identity: 0.475
+  Mean identity: 0.258
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: DROSHA_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.475
+  Mean identity: 0.260
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: EFTUD2_HepG2.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.436
+  Mean identity: 0.261
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: EIF3D_HepG2.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.733
+  Mean identity: 0.258
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: EIF3G_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.861
+  Mean identity: 0.256
+  Pairs above 0.8: 1 (0.01%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: EIF3H_HepG2.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.446
+  Mean identity: 0.261
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: EIF4A3_Hela.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.446
+  Mean identity: 0.256
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: EIF4G2_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.436
+  Mean identity: 0.255
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: ELAVL1_Hela.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 4403 train and 1099 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 4403
+  Test sequences: 1099
+  Max identity: 0.465
+  Mean identity: 0.252
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: EWSR1_HEK293.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.832
+  Mean identity: 0.253
+  Pairs above 0.8: 1 (0.01%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: EXOSC5_HepG2.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.465
+  Mean identity: 0.263
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: FAM120A_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.426
+  Mean identity: 0.253
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: FASTKD2_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.455
+  Mean identity: 0.255
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: FBL_HEK293.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 7475 train and 1867 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 7475
+  Test sequences: 1867
+  Max identity: 0.485
+  Mean identity: 0.254
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: FIP1L1_HEK293.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.446
+  Mean identity: 0.256
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: FKBP4_HepG2.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.455
+  Mean identity: 0.261
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: FMR1_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.446
+  Mean identity: 0.254
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: FTO_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.455
+  Mean identity: 0.256
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: FUS_HEK293.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 9743 train and 2434 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 9743
+  Test sequences: 2434
+  Max identity: 0.455
+  Mean identity: 0.251
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: FXR1_HEK293.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 2012 train and 502 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 2012
+  Test sequences: 502
+  Max identity: 0.436
+  Mean identity: 0.252
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: FXR2_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.465
+  Mean identity: 0.255
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: G3BP1_HepG2.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.505
+  Mean identity: 0.258
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: GEMIN5_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.792
+  Mean identity: 0.256
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: GNL3_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.475
+  Mean identity: 0.253
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: GPKOW_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.436
+  Mean identity: 0.253
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: GRWD1_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.554
+  Mean identity: 0.255
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: GTF2F1_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.465
+  Mean identity: 0.257
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: HLTF_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.475
+  Mean identity: 0.252
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: HNRNPA1_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.426
+  Mean identity: 0.252
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: HNRNPC_Hela.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.426
+  Mean identity: 0.251
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: HNRNPD_HEK293.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 3768 train and 942 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 3768
+  Test sequences: 942
+  Max identity: 0.436
+  Mean identity: 0.252
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: HNRNPF_HEK293T.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 1155 train and 288 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 1155
+  Test sequences: 288
+  Max identity: 0.436
+  Mean identity: 0.251
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: HNRNPK_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.455
+  Mean identity: 0.254
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: HNRNPM_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.970
+  Mean identity: 0.257
+  Pairs above 0.8: 1 (0.01%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: HNRNPUL1_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.436
+  Mean identity: 0.252
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: HNRNPU_Hela.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 2159 train and 538 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 2159
+  Test sequences: 538
+  Max identity: 0.970
+  Mean identity: 0.252
+  Pairs above 0.8: 1 (0.01%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: IGF2BP1_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.436
+  Mean identity: 0.253
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: IGF2BP2_HEK293.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.446
+  Mean identity: 0.253
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: IGF2BP3_HEK293.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.455
+  Mean identity: 0.252
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: ILF3_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.455
+  Mean identity: 0.253
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: KHDRBS1_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.436
+  Mean identity: 0.252
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: KHSRP_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.436
+  Mean identity: 0.252
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: LARP4_HepG2.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.455
+  Mean identity: 0.258
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: LARP7_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.436
+  Mean identity: 0.258
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: LIN28A_H9.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 9227 train and 2305 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 9227
+  Test sequences: 2305
+  Max identity: 0.446
+  Mean identity: 0.252
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: LIN28B_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.485
+  Mean identity: 0.254
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: LSM11_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.941
+  Mean identity: 0.257
+  Pairs above 0.8: 1 (0.01%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: METAP2_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.436
+  Mean identity: 0.254
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: METTL14_Hela.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 1463 train and 364 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 1463
+  Test sequences: 364
+  Max identity: 0.446
+  Mean identity: 0.253
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: METTL3_Hela.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 3471 train and 867 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 3471
+  Test sequences: 867
+  Max identity: 0.475
+  Mean identity: 0.255
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: MOV10_HEK293.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.436
+  Mean identity: 0.253
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: MTPAP_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.446
+  Mean identity: 0.254
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: NCBP2_HepG2.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.465
+  Mean identity: 0.261
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: NIP7_HepG2.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.485
+  Mean identity: 0.261
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: NIPBL_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.495
+  Mean identity: 0.253
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: NKRF_HepG2.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.970
+  Mean identity: 0.259
+  Pairs above 0.8: 1 (0.01%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: NOL12_HepG2.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.911
+  Mean identity: 0.264
+  Pairs above 0.8: 1 (0.01%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: NOLC1_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.446
+  Mean identity: 0.255
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: NONO_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.485
+  Mean identity: 0.254
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: NOP56_HEK293.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 990 train and 246 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 990
+  Test sequences: 246
+  Max identity: 0.851
+  Mean identity: 0.253
+  Pairs above 0.8: 1 (0.01%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: NOP58_HEK293.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 6251 train and 1561 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 6251
+  Test sequences: 1561
+  Max identity: 0.416
+  Mean identity: 0.253
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: NPM1_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.416
+  Mean identity: 0.251
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: NUDT21_HEK293.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.446
+  Mean identity: 0.257
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: PABPC4_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.436
+  Mean identity: 0.252
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: PABPN1_HepG2.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.802
+  Mean identity: 0.263
+  Pairs above 0.8: 1 (0.01%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: PCBP1_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.446
+  Mean identity: 0.258
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: PCBP2_HepG2.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.465
+  Mean identity: 0.259
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: PHF6_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.455
+  Mean identity: 0.257
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: PPIG_HepG2.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.455
+  Mean identity: 0.259
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: PRPF4_HepG2.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.455
+  Mean identity: 0.261
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: PRPF8_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.495
+  Mean identity: 0.254
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: PTBP1PTBP2_Hela.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 8736 train and 2184 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 8736
+  Test sequences: 2184
+  Max identity: 0.465
+  Mean identity: 0.251
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: PTBP1_Hela.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.436
+  Mean identity: 0.254
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: PUM1_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.436
+  Mean identity: 0.253
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: PUM2_HEK293.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 2631 train and 657 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 2631
+  Test sequences: 657
+  Max identity: 0.436
+  Mean identity: 0.250
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: PUS1_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 11750 train and 2937 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 11750
+  Test sequences: 2937
+  Max identity: 0.465
+  Mean identity: 0.253
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: QKI_HEK293.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 1575 train and 393 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 1575
+  Test sequences: 393
+  Max identity: 0.455
+  Mean identity: 0.254
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: RBFOX2_HepG2.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.455
+  Mean identity: 0.260
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: RBM15_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.455
+  Mean identity: 0.255
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: RBM22_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.446
+  Mean identity: 0.253
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: RBM27_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.446
+  Mean identity: 0.254
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: RBPMS_HEK293.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 2526 train and 630 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 2526
+  Test sequences: 630
+  Max identity: 0.624
+  Mean identity: 0.253
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: RPS11_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.465
+  Mean identity: 0.254
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: RPS3_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.436
+  Mean identity: 0.254
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: RTCB_HEK293.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.446
+  Mean identity: 0.253
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: SAFB2_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.455
+  Mean identity: 0.253
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: SBDS_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.455
+  Mean identity: 0.255
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: SDAD1_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.455
+  Mean identity: 0.259
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: SERBP1_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 11908 train and 2976 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 11908
+  Test sequences: 2976
+  Max identity: 0.465
+  Mean identity: 0.258
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: SF3A3_HepG2.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.693
+  Mean identity: 0.259
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: SF3B1_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.465
+  Mean identity: 0.257
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: SF3B4_HepG2.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.505
+  Mean identity: 0.263
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: SLBP_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.446
+  Mean identity: 0.252
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: SLTM_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.455
+  Mean identity: 0.255
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: SMNDC1_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.465
+  Mean identity: 0.255
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: SND1_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.446
+  Mean identity: 0.252
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: SRRM4_HEK293T.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.446
+  Mean identity: 0.252
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: SRSF1_HepG2.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.475
+  Mean identity: 0.260
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: SRSF7_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.475
+  Mean identity: 0.254
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: SRSF9_HepG2.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.475
+  Mean identity: 0.258
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: SUB1_HepG2.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.455
+  Mean identity: 0.257
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: SUPV3L1_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 11128 train and 2782 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 11128
+  Test sequences: 2782
+  Max identity: 0.446
+  Mean identity: 0.253
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: TAF15_HEK293.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 5831 train and 1456 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 5831
+  Test sequences: 1456
+  Max identity: 0.436
+  Mean identity: 0.252
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: TARDBP_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.436
+  Mean identity: 0.252
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: TBRG4_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.446
+  Mean identity: 0.254
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: TIA1_Hela.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.485
+  Mean identity: 0.252
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: TIAL1_Hela.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.436
+  Mean identity: 0.253
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: TNRC6A_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.455
+  Mean identity: 0.253
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: TRA2A_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.554
+  Mean identity: 0.254
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: TROVE2_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.436
+  Mean identity: 0.253
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: U2AF1_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.426
+  Mean identity: 0.254
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: U2AF2_Hela.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 2051 train and 511 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 2051
+  Test sequences: 511
+  Max identity: 0.980
+  Mean identity: 0.252
+  Pairs above 0.8: 2 (0.02%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: U2AF65_Hela.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.446
+  Mean identity: 0.255
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: UCHL5_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.436
+  Mean identity: 0.255
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: UPF1_Hela.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 6120 train and 1530 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 6120
+  Test sequences: 1530
+  Max identity: 0.455
+  Mean identity: 0.253
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: UTP18_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.505
+  Mean identity: 0.253
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: UTP3_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.505
+  Mean identity: 0.257
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: WDR33_HEK293.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.465
+  Mean identity: 0.251
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: WDR3_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.465
+  Mean identity: 0.254
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: WDR43_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.455
+  Mean identity: 0.256
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: WRN_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.436
+  Mean identity: 0.258
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: WTAP_Hela.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 1119 train and 279 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 1119
+  Test sequences: 279
+  Max identity: 0.446
+  Mean identity: 0.254
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: XRCC6_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.446
+  Mean identity: 0.255
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: XRN2_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.426
+  Mean identity: 0.254
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: YBX3_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.446
+  Mean identity: 0.257
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: YTHDF2_Hela.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.446
+  Mean identity: 0.256
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: YWHAG_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.465
+  Mean identity: 0.254
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: ZC3H11A_HepG2.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.455
+  Mean identity: 0.256
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: ZC3H7B_HEK293.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.455
+  Mean identity: 0.252
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: ZNF622_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.436
+  Mean identity: 0.256
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: ZNF800_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.446
+  Mean identity: 0.254
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: ZRANB2_K562.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12000 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12000
+  Test sequences: 3000
+  Max identity: 0.465
+  Mean identity: 0.257
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+Processing: eIF4AIII_Hela.h5
+================================================================================
+
+Step 1: Analyzing existing split...
+Analyzing homology between 12002 train and 3000 test sequences...
+Sampling 100 train x 100 test pairs
+  Processed 100/100 train sequences...
+
+Original split analysis:
+  Train sequences: 12002
+  Test sequences: 3000
+  Max identity: 0.475
+  Mean identity: 0.257
+  Pairs above 0.8: 0 (0.00%)
+
+Analysis-only mode. Skipping split creation.
+
+================================================================================
+All results saved to: evaluation/all_datasets/splitting_evaluation_summary.json
+================================================================================
+
