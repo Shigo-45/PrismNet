@@ -1,6 +1,8 @@
 """Ablation experiment configurations."""
 
 from dataclasses import dataclass, field
+from typing import Callable, Optional
+import torch.nn as nn
 
 
 @dataclass
@@ -106,6 +108,61 @@ CUMULATIVE_CONFIGS = [
 ]
 
 
+@dataclass
+class BaselineConfig:
+    """Configuration for baseline models.
+
+    Baseline models are simple architectures used to test the hypothesis
+    that PrismNet's performance comes from data quality rather than
+    architectural sophistication.
+
+    Attributes:
+        name: Human-readable name for this baseline
+        model_fn: Factory function that returns an instance of the model
+        description: Brief description of the baseline architecture
+    """
+    name: str
+    model_fn: Callable[[], nn.Module]
+    description: str
+
+    def to_dict(self) -> dict:
+        """Convert config to dictionary for logging."""
+        return {
+            "name": self.name,
+            "description": self.description,
+            "is_baseline": True,
+        }
+
+
+# Import baseline models
+from .baselines import PlainCNN2D1D, PlainCNN2D, BiLSTMBaseline, BiGRUBaseline
+
+
+# Baseline model configurations
+BASELINE_CONFIGS = [
+    BaselineConfig(
+        name="plain_cnn_2d1d",
+        model_fn=lambda: PlainCNN2D1D(),
+        description="Plain CNN with 2D→1D transition, no residual blocks"
+    ),
+    BaselineConfig(
+        name="plain_cnn_2d",
+        model_fn=lambda: PlainCNN2D(),
+        description="Pure 2D CNN without 1D transition"
+    ),
+    BaselineConfig(
+        name="bilstm",
+        model_fn=lambda: BiLSTMBaseline(),
+        description="Bidirectional LSTM baseline"
+    ),
+    BaselineConfig(
+        name="bigru",
+        model_fn=lambda: BiGRUBaseline(),
+        description="Bidirectional GRU baseline"
+    ),
+]
+
+
 def get_config_by_name(name: str) -> AblationConfig:
     """Get an ablation config by name from predefined configs."""
     all_configs = LEAVE_ONE_OUT_CONFIGS + CUMULATIVE_CONFIGS
@@ -113,3 +170,16 @@ def get_config_by_name(name: str) -> AblationConfig:
         if config.name == name:
             return config
     raise ValueError(f"Unknown ablation config: {name}")
+
+
+def get_baseline_by_name(name: str) -> BaselineConfig:
+    """Get a baseline config by name."""
+    for config in BASELINE_CONFIGS:
+        if config.name == name:
+            return config
+    raise ValueError(f"Unknown baseline config: {name}")
+
+
+def is_baseline_config(name: str) -> bool:
+    """Check if a config name refers to a baseline model."""
+    return any(config.name == name for config in BASELINE_CONFIGS)

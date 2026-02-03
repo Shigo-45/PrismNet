@@ -49,6 +49,12 @@ tensorboard --logdir exp/prismnet/out/tfb
 
 Training hyperparameters are configured in the shell scripts, which call `tools/main.py` with arguments.
 
+**IMPORTANT - Resource Management**:
+- **Do NOT run more than 3 PrismNet model training jobs in parallel** (including background jobs)
+- Check GPU status with `nvidia-smi` before starting training
+- Check RAM with `free -h` before starting training
+- Each training job can consume significant GPU memory and system resources
+
 **Key training options** (edit in train.sh):
 - `--lr`: Learning rate (default: 0.001)
 - `--batch_size`: Batch size (default: 64)

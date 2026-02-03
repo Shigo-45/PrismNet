@@ -1,5 +1,6 @@
 """Ablation experiment runner."""
 
+import fcntl
 import json
 import os
 import random
@@ -17,7 +18,7 @@ from prismnet.loader import SeqicSHAPE
 from prismnet.model.utils import GradualWarmupScheduler
 from prismnet.utils import datautils
 
-from .config import AblationConfig
+from .config import AblationConfig, BaselineConfig
 from .variants import create_ablated_model
 
 
@@ -142,7 +143,7 @@ def validate_epoch(model, device, test_loader, criterion):
 
 
 def run_ablation_experiment(
-    ablation_config: AblationConfig,
+    ablation_config,  # AblationConfig or BaselineConfig
     data_path: str,
     output_dir: str,
     training_config: Optional[TrainingConfig] = None,
@@ -152,7 +153,7 @@ def run_ablation_experiment(
     """Run a single ablation experiment.
 
     Args:
-        ablation_config: Configuration specifying which components to ablate
+        ablation_config: AblationConfig or BaselineConfig specifying the model
         data_path: Path to HDF5 dataset file
         output_dir: Directory to save results and models
         training_config: Training hyperparameters (uses defaults if None)
@@ -200,10 +201,13 @@ def run_ablation_experiment(
         print(f"Config: {ablation_config.name}")
         print(f"  {ablation_config.to_dict()}")
 
-    # Model
-    model = create_ablated_model(
-        ablation_config, mode=training_config.mode, base_channel=8
-    )
+    # Model - check if it's a baseline or ablation config
+    if isinstance(ablation_config, BaselineConfig):
+        model = ablation_config.model_fn()
+    else:
+        model = create_ablated_model(
+            ablation_config, mode=training_config.mode, base_channel=8
+        )
     model = model.to(device)
 
     # Loss and optimizer
@@ -313,9 +317,29 @@ def run_ablation_suite(
             )
             results.append(result)
 
-            # Save intermediate results
+            # Save intermediate results with file locking
             results_path = output_dir / "ablation_results.json"
-            with open(results_path, "w") as f:
-                json.dump([r.to_dict() for r in results], f, indent=2)
+
+            # Use file locking to prevent concurrent writes
+            with open(results_path, "a+") as f:
+                fcntl.flock(f.fileno(), fcntl.LOCK_EX)
+                try:
+                    # Read existing results
+                    f.seek(0)
+                    content = f.read()
+                    if content.strip():
+                        existing_results = json.loads(content)
+                    else:
+                        existing_results = []
+
+                    # Add new result
+                    existing_results.append(result.to_dict())
+
+                    # Write back all results
+                    f.seek(0)
+                    f.truncate()
+                    json.dump(existing_results, f, indent=2)
+                finally:
+                    fcntl.flock(f.fileno(), fcntl.LOCK_UN)
 
     return results
