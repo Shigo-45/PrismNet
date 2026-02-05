@@ -85,7 +85,13 @@ class PlainCNN2D(nn.Module):
     Target: ~57K parameters
     """
 
-    def __init__(self):
+    def __init__(self, mode='pu'):
+        """Initialize PlainCNN2D.
+
+        Args:
+            mode: Data mode (pu/seq/str). Accepted for compatibility with main.py
+                  but ignored - this baseline always uses full 5-channel input.
+        """
         super().__init__()
 
         self.conv1 = nn.Conv2d(1, 14, kernel_size=(7, 3), padding=(3, 1))
@@ -134,7 +140,15 @@ class BiLSTMBaseline(nn.Module):
     Target: ~57K parameters
     """
 
-    def __init__(self, hidden_size=41, num_layers=2):
+    def __init__(self, mode='pu', hidden_size=41, num_layers=2):
+        """Initialize BiLSTMBaseline.
+
+        Args:
+            mode: Data mode (pu/seq/str). Accepted for compatibility with main.py
+                  but ignored - this baseline always uses full 5-channel input.
+            hidden_size: LSTM hidden dimension (default: 41).
+            num_layers: Number of LSTM layers (default: 2).
+        """
         super().__init__()
 
         self.hidden_size = hidden_size
@@ -191,7 +205,15 @@ class BiGRUBaseline(nn.Module):
     Target: ~57K parameters
     """
 
-    def __init__(self, hidden_size=48, num_layers=2):
+    def __init__(self, mode='pu', hidden_size=48, num_layers=2):
+        """Initialize BiGRUBaseline.
+
+        Args:
+            mode: Data mode (pu/seq/str). Accepted for compatibility with main.py
+                  but ignored - this baseline always uses full 5-channel input.
+            hidden_size: GRU hidden dimension (default: 48).
+            num_layers: Number of GRU layers (default: 2).
+        """
         super().__init__()
 
         self.hidden_size = hidden_size
