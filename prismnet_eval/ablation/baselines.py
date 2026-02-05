@@ -21,7 +21,13 @@ class PlainCNN2D1D(nn.Module):
     Target: ~57K parameters to match minimal ablation
     """
 
-    def __init__(self):
+    def __init__(self, mode='pu'):
+        """Initialize PlainCNN2D1D.
+
+        Args:
+            mode: Data mode (pu/seq/str). Accepted for compatibility with main.py
+                  but ignored - this baseline always uses full 5-channel input.
+        """
         super().__init__()
 
         # 2D convolution stage

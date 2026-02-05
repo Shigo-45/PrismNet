@@ -11,6 +11,9 @@ from sklearn import metrics
 import numpy as np
 
 import prismnet.model as arch
+from prismnet_eval.ablation.baselines import PlainCNN2D1D
+# Register plain CNN for --arch PlainCNN2D1D
+arch.PlainCNN2D1D = PlainCNN2D1D
 from prismnet import train, validate, inference, log_print, compute_saliency, compute_saliency_img, compute_high_attention_region
 #compute_high_attention_region
 
