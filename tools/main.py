@@ -120,6 +120,16 @@ def main():
     parser.add_argument('--log_interval',   type=int, default=100, help='log print interval')
     parser.add_argument('--seed',           type=int, default=1024, help='manual seed')
     args = parser.parse_args()
+
+    # Validate --model_path if provided
+    if args.model_path:
+        if not args.model_path.endswith('.pth'):
+            parser.error("--model_path must point to a .pth file")
+        if not os.path.exists(args.model_path):
+            parser.error(f"Model file not found: {args.model_path}")
+        # Make --model_path imply --load_best for convenience
+        args.load_best = True
+
     print(args)
     use_cuda = not args.no_cuda and torch.cuda.is_available()
     
@@ -166,6 +176,11 @@ def main():
         else:
             filename = model_path.format("best")
             print("Loading model: {}".format(filename))
+
+        # Validate file existence before loading
+        if not os.path.exists(filename):
+            raise FileNotFoundError(f"Model checkpoint not found: {filename}")
+
         model.load_state_dict(torch.load(filename,map_location='cpu'))
  
     model = model.to(device)
