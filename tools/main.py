@@ -93,6 +93,7 @@ def main():
     parser.add_argument('--out_dir',        type=str, default=".", help='output directory')
     parser.add_argument('--mode',           type=str, default="pu", help='data mode')
     parser.add_argument("--infer_file",     type=str, help="infer file", default="")
+    parser.add_argument("--model_path",     type=str, help="custom model checkpoint path (overrides default)", default="")
     # Training Hyper-parameter
     parser.add_argument('--arch',           default="PrismNet", help='network architecture')
     parser.add_argument('--lr_scheduler',   default="warmup", help=' lr scheduler: warmup/cosine')
@@ -159,8 +160,12 @@ def main():
     # print(model)
 
     if args.load_best:
-        filename = model_path.format("best")
-        print("Loading model: {}".format(filename))
+        if args.model_path:
+            filename = args.model_path
+            print("Loading custom model: {}".format(filename))
+        else:
+            filename = model_path.format("best")
+            print("Loading model: {}".format(filename))
         model.load_state_dict(torch.load(filename,map_location='cpu'))
  
     model = model.to(device)
