@@ -163,6 +163,8 @@ def run_ablation_experiment(
     Returns:
         AblationResult with metrics and model path
     """
+    import multiprocessing as mp
+
     if training_config is None:
         training_config = TrainingConfig()
 
@@ -179,19 +181,25 @@ def run_ablation_experiment(
     model_dir.mkdir(exist_ok=True)
     model_path = model_dir / f"{dataset_name}_{ablation_config.name}.pth"
 
+    # Detect if we're in a daemonic process (parallel execution)
+    # Daemonic processes can't spawn children, so set num_workers=0
+    current_process = mp.current_process()
+    is_daemon = current_process.daemon if hasattr(current_process, 'daemon') else False
+    num_workers = 0 if is_daemon else 2
+
     # Data loaders
     train_loader = torch.utils.data.DataLoader(
         SeqicSHAPE(data_path),
         batch_size=training_config.batch_size,
         shuffle=True,
-        num_workers=2,
+        num_workers=num_workers,
         pin_memory=True,
     )
     test_loader = torch.utils.data.DataLoader(
         SeqicSHAPE(data_path, is_test=True),
         batch_size=training_config.batch_size * 8,
         shuffle=False,
-        num_workers=2,
+        num_workers=num_workers,
         pin_memory=True,
     )
 
