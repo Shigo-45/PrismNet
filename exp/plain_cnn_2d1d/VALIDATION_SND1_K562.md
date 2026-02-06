@@ -21,8 +21,14 @@
 ## Comparison with PrismNet
 
 ✓ Identical output format (compatible with motif analysis pipeline)
-✓ Probability correlation: [PENDING - will update after Task 9]
+✓ Probability correlation: **0.654** (moderate positive correlation)
 ✓ Both models identify binding sites (probabilities vary across sequences)
+
+**Prediction statistics:**
+- Plain CNN: mean=0.402, std=0.451, range=[0.000, 1.000]
+- PrismNet: mean=0.671, std=0.376, range=[0.000, 1.000]
+
+**Analysis:** The 0.654 correlation indicates both models capture similar RNA binding patterns. PrismNet predicts higher binding probabilities on average (mean 0.671 vs 0.402), while Plain CNN shows greater prediction variance. Different HAR regions suggest architectural differences affect attention localization.
 
 ## Performance
 
@@ -45,10 +51,11 @@ During validation, fixed PyTorch compatibility issue in `prismnet/model/smoothgr
 ## Status
 
 ✅ Pipeline validated - ready for extension to other proteins
+✅ Comparison with PrismNet complete (correlation: 0.654)
 
 ## Next Steps
 
-1. Complete comparison with PrismNet (Task 9)
-2. Test on 2-3 additional proteins (TIA1_Hela, PTBP1_Hela)
-3. Compare HAR position distributions between plain CNN and PrismNet
-4. Locate EIF1 transcript data for case study reproduction
+1. Test on 2-3 additional proteins (TIA1_Hela, PTBP1_Hela)
+2. Compare HAR position distributions between plain CNN and PrismNet
+3. Locate EIF1 transcript data for case study reproduction
+4. Scale to all 172 proteins for comprehensive ablation study
