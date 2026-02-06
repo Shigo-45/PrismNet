@@ -13,6 +13,7 @@ events.out*
 *.webp*
 data/*
 exp/*
+tmp/*
 !exp/prismnet/
 !exp/logistic_reg/
 icSHAPE/*
