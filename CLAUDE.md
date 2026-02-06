@@ -89,6 +89,40 @@ Output files are saved in `exp/<EXP_NAME>/out/`:
 - Saliency: `out/saliency/<identity>.sal`
 - Visualizations: `out/imgs/<identity>/`
 
+## Pre-trained Models
+
+**IMPORTANT**: All 172 pre-trained PrismNet models are available in the parent project:
+
+```
+/home/shigo-45/projects/PrismNet/exp/train_all/out/models/
+```
+
+**When to use these models:**
+- Evaluation tasks requiring trained PrismNet models
+- Inference on new data
+- Comparison with baseline models
+- Analysis requiring model weights
+- Any task mentioning "PrismNet model" or "trained model"
+
+**Model naming convention:**
+```
+<PROTEIN>_<CELLTYPE>_PrismNet_pu_best.pth
+```
+
+Examples:
+- `AARS_K562_PrismNet_pu_best.pth`
+- `TIA1_Hela_PrismNet_pu_best.pth`
+- `YTHDF2_Hela_PrismNet_pu_best.pth`
+
+**Before training new models**, always check if a pre-trained model already exists in this directory. There are 172 models available covering all RBP datasets.
+
+**Evaluation results** are also available:
+```
+/home/shigo-45/projects/PrismNet/exp/train_all/out/evals/
+```
+
+Format: `<PROTEIN>_<CELLTYPE>_PrismNet_pu.metrics` (TSV format: dataset, acc, auc, prc, tp, tn, fp, fn)
+
 ## Architecture
 
 ### Model Structure

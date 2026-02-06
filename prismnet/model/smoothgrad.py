@@ -30,7 +30,9 @@ class SmoothGrad(object):
         z = z.to(self.device)
         z.requires_grad=True
         output = self.model(z)
-        output = torch.sigmoid(output)
+        # Compute gradients w.r.t. logits to avoid sigmoid saturation
+        # When logits are extreme (e.g., -124), sigmoid gradient is ~0
+        # But logit gradients are still meaningful
         output.backward()
         return z.grad
 
@@ -107,23 +109,25 @@ def generate_saliency(model, x, y=None, smooth=False, nsamples=2, stddev=0.15, o
 
 
 
-class GuidedBackpropReLU(torch.autograd.Function):
+class GuidedBackpropReLUFunction(torch.autograd.Function):
+    """
+    New-style autograd function for GuidedBackprop ReLU.
+    Uses static forward/backward methods as required by modern PyTorch.
+    """
 
-    def __init__(self, inplace=False):
-        super(GuidedBackpropReLU, self).__init__()
-        self.inplace = inplace
-
-    def forward(self, input):
+    @staticmethod
+    def forward(ctx, input):
         pos_mask = (input > 0).type_as(input)
         output = torch.addcmul(
             torch.zeros(input.size()).type_as(input),
             input,
             pos_mask)
-        self.save_for_backward(input, output)
+        ctx.save_for_backward(input, output)
         return output
 
-    def backward(self, grad_output):
-        input, output = self.saved_tensors
+    @staticmethod
+    def backward(ctx, grad_output):
+        input, output = ctx.saved_tensors
 
         pos_mask_1 = (input > 0).type_as(grad_output)
         pos_mask_2 = (grad_output > 0).type_as(grad_output)
@@ -135,10 +139,22 @@ class GuidedBackpropReLU(torch.autograd.Function):
 
         return grad_input
 
+
+class GuidedBackpropReLU(nn.Module):
+    """
+    Wrapper module for GuidedBackpropReLU that can be used as a drop-in replacement for nn.ReLU.
+    """
+
+    def __init__(self, inplace=False):
+        super(GuidedBackpropReLU, self).__init__()
+        self.inplace = inplace
+
+    def forward(self, input):
+        return GuidedBackpropReLUFunction.apply(input)
+
     def __repr__(self):
         inplace_str = ', inplace' if self.inplace else ''
-        return self.__class__.__name__ + ' (' \
-            + inplace_str + ')'
+        return self.__class__.__name__ + ' (' + inplace_str + ')'
 
 class GuidedBackpropSmoothGrad(SmoothGrad):
 
@@ -147,6 +163,6 @@ class GuidedBackpropSmoothGrad(SmoothGrad):
         super(GuidedBackpropSmoothGrad, self).__init__(
             model, device, only_seq, train, x_stddev, t_stddev, nsamples, magnitude)
         for idx, module in self.features._modules.items():
-            if module.__class__.__name__ is 'ReLU':
+            if module.__class__.__name__ == 'ReLU':
                 self.features._modules[idx] = GuidedBackpropReLU()
 

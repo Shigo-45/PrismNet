@@ -9,11 +9,12 @@ events.out*
 *.pth
 .DS_Store
 *.pdf
+*.png
+*.webp*
 data/*
 exp/*
 !exp/prismnet/
 !exp/logistic_reg/
-!exp/plain_cnn_2d1d/
 icSHAPE/*
 
 # Evaluation results
