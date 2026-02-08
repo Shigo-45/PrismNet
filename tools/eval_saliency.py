@@ -31,7 +31,6 @@ from prismnet_eval.saliency import (
 )
 from prismnet_eval.saliency.visualization import (
     plot_cascading_results,
-    plot_similarity_distributions,
     plot_summary_report,
 )
 

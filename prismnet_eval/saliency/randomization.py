@@ -28,7 +28,7 @@ def compute_similarity_metrics(
         saliency2: Second saliency map tensor (batch, 1, seq_len, features)
 
     Returns:
-        Dictionary with SSIM, Spearman correlation, and L2 distance
+        Dictionary with SSIM, Spearman correlation, L2 distance, and sample counts
     """
     # Convert to numpy and flatten
     sal1_np = saliency1.detach().cpu().numpy()
@@ -39,7 +39,9 @@ def compute_similarity_metrics(
     spearman_scores = []
     l2_distances = []
 
-    for i in range(sal1_np.shape[0]):
+    total_samples = sal1_np.shape[0]
+
+    for i in range(total_samples):
         # Flatten spatial dimensions for each sample
         s1_flat = sal1_np[i].flatten()
         s2_flat = sal2_np[i].flatten()
@@ -68,11 +70,27 @@ def compute_similarity_metrics(
         l2_dist = np.linalg.norm(s1_flat - s2_flat)
         l2_distances.append(l2_dist)
 
+    # Calculate dropout rates
+    n_valid_ssim = len(ssim_scores)
+    n_valid_spearman = len(spearman_scores)
+    ssim_dropout_rate = (total_samples - n_valid_ssim) / total_samples
+    spearman_dropout_rate = (total_samples - n_valid_spearman) / total_samples
+
+    # Warn if high dropout
+    if ssim_dropout_rate > 0.1:
+        print(f"Warning: {ssim_dropout_rate*100:.1f}% of samples dropped for SSIM calculation")
+    if spearman_dropout_rate > 0.1:
+        print(f"Warning: {spearman_dropout_rate*100:.1f}% of samples dropped for Spearman calculation")
+
     return {
         "ssim_mean": float(np.mean(ssim_scores)) if ssim_scores else 0.0,
         "ssim_std": float(np.std(ssim_scores)) if ssim_scores else 0.0,
+        "ssim_n_valid": n_valid_ssim,
+        "ssim_n_total": total_samples,
         "spearman_mean": float(np.mean(spearman_scores)) if spearman_scores else 0.0,
         "spearman_std": float(np.std(spearman_scores)) if spearman_scores else 0.0,
+        "spearman_n_valid": n_valid_spearman,
+        "spearman_n_total": total_samples,
         "l2_mean": float(np.mean(l2_distances)),
         "l2_std": float(np.std(l2_distances)),
     }
@@ -80,6 +98,14 @@ def compute_similarity_metrics(
 
 def _randomize_model_weights(model: nn.Module) -> nn.Module:
     """Randomize all weights in a model by reinitializing.
+
+    Uses the same initialization scheme as PrismNet's _initialize_weights():
+    - Conv2d/Conv1d: Kaiming normal (fan_out, relu)
+    - BatchNorm: weight=1, bias=0
+    - Linear: normal(0, 0.01)
+
+    This ensures the random baseline uses the same weight distribution
+    as the original training initialization.
 
     Args:
         model: PyTorch model to randomize
@@ -90,7 +116,7 @@ def _randomize_model_weights(model: nn.Module) -> nn.Module:
     # Create a deep copy to avoid modifying original
     model_copy = copy.deepcopy(model)
 
-    # Reinitialize all parameters
+    # Reinitialize all parameters using PrismNet's initialization scheme
     def init_weights(m):
         if isinstance(m, (nn.Conv2d, nn.Conv1d)):
             nn.init.kaiming_normal_(m.weight, mode="fan_out", nonlinearity="relu")
@@ -144,7 +170,8 @@ def _compute_saliency_for_samples(
 
         # Compute saliency for this batch
         batch_saliency = saliency_computer.get_batch_gradients(batch_x[:batch_size])
-        saliency_maps.append(batch_saliency.cpu())
+        # Detach and move to CPU to free computation graph and GPU memory
+        saliency_maps.append(batch_saliency.detach().cpu())
 
         samples_processed += batch_size
 
@@ -173,6 +200,16 @@ def full_randomization_test(
     Returns:
         Dictionary with similarity statistics and per-model comparisons
     """
+    # Input validation
+    if n_random <= 0:
+        raise ValueError(f"n_random must be positive, got {n_random}")
+    if n_samples <= 0:
+        raise ValueError(f"n_samples must be positive, got {n_samples}")
+    if trained_model.training:
+        raise ValueError("trained_model must be in eval mode (call model.eval())")
+    if len(test_loader.dataset) == 0:
+        raise ValueError("test_loader has empty dataset")
+
     print(f"Computing saliency for trained model on {n_samples} samples...")
     trained_saliency = _compute_saliency_for_samples(
         trained_model, test_loader, n_samples, device
@@ -211,6 +248,8 @@ def full_randomization_test(
     # Aggregate statistics
     def aggregate_metrics(metric_list: List[Dict]) -> Dict:
         """Average metrics across multiple comparisons."""
+        if not metric_list:
+            raise ValueError("Cannot aggregate metrics from empty list")
         keys = metric_list[0].keys()
         return {
             key: {
@@ -252,6 +291,14 @@ def cascading_randomization_test(
     Returns:
         Dictionary with per-layer similarity statistics
     """
+    # Input validation
+    if n_samples <= 0:
+        raise ValueError(f"n_samples must be positive, got {n_samples}")
+    if trained_model.training:
+        raise ValueError("trained_model must be in eval mode (call model.eval())")
+    if len(test_loader.dataset) == 0:
+        raise ValueError("test_loader has empty dataset")
+
     print(f"Computing saliency for trained model on {n_samples} samples...")
     trained_saliency = _compute_saliency_for_samples(
         trained_model, test_loader, n_samples, device

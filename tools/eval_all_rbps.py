@@ -59,12 +59,18 @@ def load_checkpoint(checkpoint_path: Path) -> Dict:
         checkpoint_path: Path to checkpoint file
 
     Returns:
-        Checkpoint data
+        Checkpoint data with sets for completed/failed/skipped
     """
     if checkpoint_path.exists():
         with open(checkpoint_path) as f:
-            return json.load(f)
-    return {"completed": [], "failed": [], "skipped": []}
+            data = json.load(f)
+            # Convert lists back to sets
+            return {
+                "completed": set(data.get("completed", [])),
+                "failed": set(data.get("failed", [])),
+                "skipped": set(data.get("skipped", [])),
+            }
+    return {"completed": set(), "failed": set(), "skipped": set()}
 
 
 def save_checkpoint(checkpoint_path: Path, data: Dict):
@@ -72,10 +78,16 @@ def save_checkpoint(checkpoint_path: Path, data: Dict):
 
     Args:
         checkpoint_path: Path to checkpoint file
-        data: Checkpoint data
+        data: Checkpoint data with sets for completed/failed/skipped
     """
+    # Convert sets to lists for JSON serialization
+    json_data = {
+        "completed": sorted(data["completed"]),
+        "failed": sorted(data["failed"]),
+        "skipped": sorted(data["skipped"]),
+    }
     with open(checkpoint_path, "w") as f:
-        json.dump(data, f, indent=2)
+        json.dump(json_data, f, indent=2)
 
 
 def check_gpu_memory() -> Tuple[float, float]:
@@ -130,14 +142,20 @@ def run_evaluation(
 
     start_time = time.time()
 
+    # Log file for this protein's output
+    log_file = protein_output / "evaluation.log"
+
     try:
-        result = subprocess.run(
-            cmd,
-            cwd=Path(__file__).parent.parent,
-            capture_output=True,
-            text=True,
-            timeout=timeout,
-        )
+        # Run with output redirected to log file instead of buffering in memory
+        with open(log_file, "w") as f:
+            result = subprocess.run(
+                cmd,
+                cwd=Path(__file__).parent.parent,
+                stdout=f,
+                stderr=subprocess.STDOUT,  # Combine stderr into stdout
+                text=True,
+                timeout=timeout,
+            )
 
         elapsed = time.time() - start_time
 
@@ -164,11 +182,19 @@ def run_evaluation(
                     "elapsed_time": elapsed,
                 }
         else:
+            # Read last 500 chars of log for error message
+            error_msg = "Unknown error"
+            if log_file.exists():
+                with open(log_file) as f:
+                    content = f.read()
+                    error_msg = content[-500:] if content else "Empty log"
+
             return {
                 "status": "failed",
                 "protein": protein,
                 "elapsed_time": elapsed,
-                "error": result.stderr[-500:] if result.stderr else "Unknown error",
+                "error": error_msg,
+                "log_file": str(log_file),
             }
 
     except subprocess.TimeoutExpired:
@@ -177,11 +203,30 @@ def run_evaluation(
             "protein": protein,
             "elapsed_time": timeout,
         }
-    except Exception as e:
+    except (FileNotFoundError, PermissionError) as e:
         return {
-            "status": "error",
+            "status": "io_error",
             "protein": protein,
-            "error": str(e),
+            "error": f"{type(e).__name__}: {str(e)}",
+        }
+    except json.JSONDecodeError as e:
+        return {
+            "status": "json_error",
+            "protein": protein,
+            "error": f"Failed to parse results JSON: {str(e)}",
+        }
+    except KeyError as e:
+        return {
+            "status": "result_format_error",
+            "protein": protein,
+            "error": f"Unexpected result format, missing key: {str(e)}",
+        }
+    except Exception as e:
+        # Catch-all for truly unexpected errors
+        return {
+            "status": "unexpected_error",
+            "protein": protein,
+            "error": f"{type(e).__name__}: {str(e)}",
         }
 
 
@@ -200,9 +245,9 @@ def main():
 
     # Load checkpoint
     checkpoint = load_checkpoint(checkpoint_path)
-    completed = set(checkpoint["completed"])
-    failed = set(checkpoint["failed"])
-    skipped = set(checkpoint["skipped"])
+    completed = checkpoint["completed"]
+    failed = checkpoint["failed"]
+    skipped = checkpoint["skipped"]
 
     # Filter proteins to evaluate
     to_evaluate = [p for p in all_proteins if p not in completed and p not in skipped]
@@ -235,7 +280,6 @@ def main():
         if not check_dataset_exists(protein, base_dir):
             print(f"⊘ Skipping {protein}: Dataset not found")
             skipped.add(protein)
-            checkpoint["skipped"].append(protein)
             save_checkpoint(checkpoint_path, checkpoint)
             continue
 
@@ -263,15 +307,12 @@ def main():
         if result["status"] == "success":
             print(f"✓ Success: {protein} ({result['elapsed_time']:.1f}s)")
             completed.add(protein)
-            checkpoint["completed"].append(protein)
         elif result["status"] == "success_no_results":
             print(f"⚠ Success but no results: {protein}")
             completed.add(protein)
-            checkpoint["completed"].append(protein)
         else:
             print(f"✗ {result['status'].title()}: {protein}")
             failed.add(protein)
-            checkpoint["failed"].append(protein)
 
         save_checkpoint(checkpoint_path, checkpoint)
 

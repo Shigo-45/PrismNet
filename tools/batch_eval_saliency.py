@@ -6,6 +6,7 @@ PrismNet models and generates comparative analysis.
 """
 
 import json
+import os
 import subprocess
 from pathlib import Path
 from typing import Dict, List
@@ -169,7 +170,7 @@ def generate_summary_report(results: List[Dict], output_path: Path):
     summary = {
         "total_proteins": len(results),
         "successful": sum(1 for r in results if r["status"] == "success"),
-        "failed": sum(1 for r in results if r["status"] == "failed"),
+        "failed": sum(1 for r in results if r["status"] != "success"),
         "proteins": {},
     }
 
@@ -202,8 +203,8 @@ def generate_summary_report(results: List[Dict], output_path: Path):
 
 
 def main():
-    base_dir = Path("/home/shigo-45/projects/PrismNet")
-    eval_dir = Path("/home/shigo-45/projects/PrismNet-eval-saliency")
+    base_dir = Path(os.getenv("PRISMNET_DIR", Path.cwd().parent / "PrismNet"))
+    eval_dir = Path(os.getenv("PRISMNET_EVAL_DIR", Path.cwd()))
     output_base = eval_dir / "evaluation" / "saliency" / "batch_evaluation"
 
     output_base.mkdir(parents=True, exist_ok=True)
