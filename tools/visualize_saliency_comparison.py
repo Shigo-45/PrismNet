@@ -3,6 +3,7 @@
 Visualize saliency maps and HARs side-by-side for plain CNN vs PrismNet.
 """
 
+import argparse
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.gridspec import GridSpec
@@ -175,13 +176,19 @@ def plot_comparison(plain_sal, prism_sal, plain_har, prism_har,
     plt.close()
 
 def main():
-    # File paths
-    plain_sal_file = 'exp/plain_cnn_2d1d/out/saliency/SND1_K562_PlainCNN2D1D_pu.sal'
-    prism_sal_file = '/home/shigo-45/projects/PrismNet/exp/train_all/out/saliency/SND1_K562_PrismNet_pu.sal'
-    plain_har_file = 'exp/plain_cnn_2d1d/out/har/SND1_K562_PlainCNN2D1D_pu.har'
-    prism_har_file = '/home/shigo-45/projects/PrismNet/exp/train_all/out/har/SND1_K562_PrismNet_pu.har'
+    parser = argparse.ArgumentParser(description='Visualize saliency comparison between plain CNN and PrismNet.')
+    parser.add_argument('--plain-sal', required=True, help='Path to plain CNN saliency file (.sal)')
+    parser.add_argument('--prism-sal', required=True, help='Path to PrismNet saliency file (.sal)')
+    parser.add_argument('--plain-har', required=True, help='Path to plain CNN HAR file (.har)')
+    parser.add_argument('--prism-har', required=True, help='Path to PrismNet HAR file (.har)')
+    parser.add_argument('--output-dir', default='exp/plain_cnn_2d1d/visualizations', help='Output directory for plots')
+    args = parser.parse_args()
 
-    output_dir = 'exp/plain_cnn_2d1d/visualizations'
+    plain_sal_file = args.plain_sal
+    prism_sal_file = args.prism_sal
+    plain_har_file = args.plain_har
+    prism_har_file = args.prism_har
+    output_dir = args.output_dir
 
     import os
     os.makedirs(output_dir, exist_ok=True)

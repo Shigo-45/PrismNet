@@ -72,7 +72,7 @@ def fix_seed(seed: int):
         torch.cuda.manual_seed(seed)
         torch.cuda.manual_seed_all(seed)
     torch.backends.cudnn.deterministic = True
-    torch.backends.cudnn.benchmark = True
+    torch.backends.cudnn.benchmark = False
 
 
 def train_epoch(model, device, train_loader, criterion, optimizer):
