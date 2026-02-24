@@ -1,7 +1,7 @@
 """Visualization functions for saliency sanity checks."""
 
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, List, Optional
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -96,7 +96,7 @@ def plot_similarity_distributions(
 
         # Create violin plots
         positions = [1, 2]
-        parts = ax.violinplot(
+        ax.violinplot(
             [trained_vs_random, random_vs_random],
             positions=positions,
             showmeans=True,

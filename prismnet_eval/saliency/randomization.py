@@ -5,7 +5,7 @@ This module implements tests from the paper "Sanity Checks for Saliency Maps"
 """
 
 import copy
-from typing import Dict, List, Tuple
+from typing import Dict, List
 
 import numpy as np
 import torch

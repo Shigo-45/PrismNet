@@ -145,7 +145,7 @@ def split_with_datasail_cli(
         ]
 
         try:
-            result = subprocess.run(
+            subprocess.run(
                 cmd,
                 capture_output=True,
                 text=True,

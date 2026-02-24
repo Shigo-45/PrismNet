@@ -209,11 +209,11 @@ def main():
         tvr = full_results["trained_vs_random"]
         rvr = full_results["random_vs_random"]
 
-        print(f"Trained vs Random:")
+        print("Trained vs Random:")
         print(f"  SSIM:     {tvr['ssim_mean']['mean']:.4f} ± {tvr['ssim_mean']['std']:.4f}")
         print(f"  Spearman: {tvr['spearman_mean']['mean']:.4f} ± {tvr['spearman_mean']['std']:.4f}")
 
-        print(f"\nRandom vs Random (baseline):")
+        print("\nRandom vs Random (baseline):")
         print(f"  SSIM:     {rvr['ssim_mean']['mean']:.4f} ± {rvr['ssim_mean']['std']:.4f}")
         print(f"  Spearman: {rvr['spearman_mean']['mean']:.4f} ± {rvr['spearman_mean']['std']:.4f}")
 

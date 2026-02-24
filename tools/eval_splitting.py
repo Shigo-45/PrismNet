@@ -22,9 +22,7 @@ from prismnet_eval.splitting import (
     cluster_sequences,
     split_by_clusters,
     split_with_datasail,
-    extract_sequences_from_h5,
     create_homology_report,
-    analyze_split_homology,
 )
 
 
@@ -130,7 +128,7 @@ def process_dataset(
         sample_size=10000  # Sample for speed
     )
 
-    print(f"\nOriginal split analysis:")
+    print("\nOriginal split analysis:")
     print(f"  Train sequences: {original_stats['n_train']}")
     print(f"  Test sequences: {original_stats['n_test']}")
     print(f"  Max identity: {original_stats['max_identity']:.3f}")
@@ -173,7 +171,7 @@ def process_dataset(
             cdhit_stats = analyze_existing_split(output_h5, identity_threshold=identity, sample_size=10000)
             results["cdhit"] = cdhit_stats
 
-            print(f"\nCD-HIT split analysis:")
+            print("\nCD-HIT split analysis:")
             print(f"  Max identity: {cdhit_stats['max_identity']:.3f}")
             print(f"  Mean identity: {cdhit_stats['mean_identity']:.3f}")
             print(f"  Pairs above {identity}: {cdhit_stats['n_pairs_above_threshold']} "
@@ -198,7 +196,7 @@ def process_dataset(
                 datasail_stats = analyze_existing_split(output_h5, identity_threshold=identity, sample_size=10000)
                 results["datasail"] = datasail_stats
 
-                print(f"\nDataSAIL split analysis:")
+                print("\nDataSAIL split analysis:")
                 print(f"  Max identity: {datasail_stats['max_identity']:.3f}")
                 print(f"  Mean identity: {datasail_stats['mean_identity']:.3f}")
                 print(f"  Pairs above {identity}: {datasail_stats['n_pairs_above_threshold']} "

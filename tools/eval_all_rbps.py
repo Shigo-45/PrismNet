@@ -260,7 +260,7 @@ def main():
         print("All proteins already evaluated!")
         return
 
-    print(f"\nEvaluation Status:")
+    print("\nEvaluation Status:")
     print(f"  Completed: {len(completed)}")
     print(f"  Failed: {len(failed)}")
     print(f"  Skipped: {len(skipped)}")
