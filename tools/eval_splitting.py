@@ -63,7 +63,14 @@ def create_split_h5(
 
         # Get indices for new split
         train_indices = [id_to_idx[seq_id] for seq_id in train_seq_ids if seq_id in id_to_idx]
+        dropped = len(train_seq_ids) - len(train_indices)
+        if dropped > 0:
+            print(f"WARNING: {dropped} train sequences had unrecognized IDs and were dropped")
+
         test_indices = [id_to_idx[seq_id] for seq_id in test_seq_ids if seq_id in id_to_idx]
+        dropped = len(test_seq_ids) - len(test_indices)
+        if dropped > 0:
+            print(f"WARNING: {dropped} test sequences had unrecognized IDs and were dropped")
 
         # Create new split
         X_train_new = X_all[train_indices]

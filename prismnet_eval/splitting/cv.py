@@ -10,7 +10,6 @@ from .analyzer import save_sequences_to_fasta
 
 def homology_aware_kfold(
     sequences: List[Tuple[str, str]],
-    labels: List[int] = None,
     n_folds: int = 5,
     method: str = "cdhit",
     identity: float = 0.8,
@@ -25,7 +24,6 @@ def homology_aware_kfold(
 
     Args:
         sequences: List of (seq_id, sequence_string) tuples
-        labels: Optional labels for stratification (not implemented yet)
         n_folds: Number of folds (default: 5)
         method: Clustering method ('cdhit' or 'datasail')
         identity: Sequence identity threshold for clustering
@@ -39,7 +37,7 @@ def homology_aware_kfold(
         >>> for train_idx, test_idx in homology_aware_kfold(sequences, n_folds=3):
         ...     print(f"Train: {train_idx}, Test: {test_idx}")
     """
-    np.random.seed(random_state)
+    rng = np.random.default_rng(random_state)
 
     # Step 1: Create temporary FASTA file for clustering
     with tempfile.NamedTemporaryFile(mode="w", suffix=".fasta", delete=False) as tmp_fasta:
@@ -85,7 +83,7 @@ def homology_aware_kfold(
     cluster_sizes = np.array([len(cluster_to_indices[cid]) for cid in cluster_ids])
 
     # Shuffle clusters
-    shuffle_idx = np.random.permutation(len(cluster_ids))
+    shuffle_idx = rng.permutation(len(cluster_ids))
     cluster_ids = [cluster_ids[i] for i in shuffle_idx]
     cluster_sizes = cluster_sizes[shuffle_idx]
 
@@ -161,7 +159,7 @@ def stratified_homology_aware_kfold(
         This is a best-effort stratification. Perfect stratification may not be possible
         when clusters have mixed labels.
     """
-    np.random.seed(random_state)
+    rng = np.random.default_rng(random_state)  # noqa: F841
 
     # Step 1: Create temporary FASTA file for clustering
     with tempfile.NamedTemporaryFile(mode="w", suffix=".fasta", delete=False) as tmp_fasta:
@@ -223,14 +221,17 @@ def stratified_homology_aware_kfold(
     cluster_info.sort(key=lambda x: (x["majority_class"], -x["size"]))
 
     # Step 6: Assign clusters to folds, attempting to balance classes
+    unique_labels = sorted(np.unique(labels))
+    label_to_idx = {label: i for i, label in enumerate(unique_labels)}
+
     fold_assignments = [[] for _ in range(n_folds)]
-    fold_label_counts = [np.zeros(len(np.unique(labels)), dtype=int) for _ in range(n_folds)]
+    fold_label_counts = [np.zeros(len(unique_labels), dtype=int) for _ in range(n_folds)]
 
     for cluster in cluster_info:
         cluster_id = cluster["id"]
 
         # Find fold with smallest count of this cluster's majority class
-        majority_class_idx = int(cluster["majority_class"])
+        majority_class_idx = label_to_idx[cluster["majority_class"]]
         fold_majority_counts = [fold_counts[majority_class_idx] for fold_counts in fold_label_counts]
         target_fold = np.argmin(fold_majority_counts)
 
@@ -239,11 +240,10 @@ def stratified_homology_aware_kfold(
 
         # Update fold label counts
         for label, count in cluster["label_dist"].items():
-            fold_label_counts[target_fold][int(label)] += count
+            fold_label_counts[target_fold][label_to_idx[label]] += count
 
     # Print fold statistics
     print(f"\nStratified k-fold CV setup ({n_folds} folds):")
-    unique_labels = np.unique(labels)
 
     for fold_idx in range(n_folds):
         fold_counts = fold_label_counts[fold_idx]

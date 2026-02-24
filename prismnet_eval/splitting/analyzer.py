@@ -4,8 +4,12 @@ import h5py
 import numpy as np
 from pathlib import Path
 from typing import Dict, List, Tuple
-from Bio import Align
-import tempfile
+
+try:
+    from Bio import Align
+    HAS_BIOPYTHON = True
+except ImportError:
+    HAS_BIOPYTHON = False
 
 
 def extract_sequences_from_h5(h5_path: Path, dataset: str = "X_train") -> List[Tuple[str, str]]:
@@ -23,7 +27,11 @@ def extract_sequences_from_h5(h5_path: Path, dataset: str = "X_train") -> List[T
         if dataset not in f:
             raise KeyError(f"Dataset {dataset} not found in {h5_path}")
 
-        X = f[dataset][:]  # Shape: (samples, features, seq_len)
+        X = f[dataset][:]  # Shape: (samples, features, seq_len) or (samples, 1, seq_len, n_features)
+
+    assert X.ndim in (3, 4), f"Unexpected shape: {X.shape}"
+    if X.ndim == 4:
+        X = X[:, 0, :, :]  # Remove channel dim -> (samples, seq_len, n_features)
 
     # Extract nucleotide sequences from one-hot encoding
     # First 4 features are A, C, G, T
@@ -31,11 +39,17 @@ def extract_sequences_from_h5(h5_path: Path, dataset: str = "X_train") -> List[T
     sequences = []
 
     for i, sample in enumerate(X):
-        # Take first 4 rows (nucleotide channels)
-        one_hot = sample[:4, :]  # Shape: (4, seq_len)
+        if X.ndim == 3 and sample.shape[0] == X.shape[1]:
+            # 3D path: original shape (samples, features, seq_len)
+            # sample shape is (features, seq_len), first 4 rows are nucleotide channels
+            one_hot = sample[:4, :]  # Shape: (4, seq_len)
+            seq_indices = np.argmax(one_hot, axis=0)
+        else:
+            # 4D path after squeeze: sample shape is (seq_len, n_features)
+            # features are on axis 1, first 4 columns are nucleotide channels
+            one_hot = sample[:, :4].T  # Shape: (4, seq_len)
+            seq_indices = np.argmax(one_hot, axis=0)
 
-        # Convert one-hot to sequence
-        seq_indices = np.argmax(one_hot, axis=0)
         sequence = "".join(nucleotides[idx] for idx in seq_indices)
 
         # Create unique ID
@@ -66,6 +80,9 @@ def compute_pairwise_identity(seq1: str, seq2: str) -> float:
     Returns:
         Identity score (0-1)
     """
+    if not HAS_BIOPYTHON:
+        raise ImportError("biopython is required. Install with: uv add biopython")
+
     if len(seq1) == 0 or len(seq2) == 0:
         return 0.0
 
@@ -75,13 +92,13 @@ def compute_pairwise_identity(seq1: str, seq2: str) -> float:
         return matches / len(seq1)
 
     # For different lengths, use alignment with overflow protection
-    try:
-        aligner = Align.PairwiseAligner()
-        aligner.mode = "global"
-        aligner.match_score = 1
-        aligner.mismatch_score = 0
-        aligner.gap_score = -1  # Penalize gaps to reduce alignment count
+    aligner = Align.PairwiseAligner()
+    aligner.mode = "global"
+    aligner.match_score = 1
+    aligner.mismatch_score = 0
+    aligner.gap_score = -1  # Penalize gaps to reduce alignment count
 
+    try:
         alignments = aligner.align(seq1, seq2)
 
         # Get the best alignment (first one)

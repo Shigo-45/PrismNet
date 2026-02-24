@@ -20,6 +20,10 @@ dependencies = [
 [project.optional-dependencies]
 eval = [
     "mlflow>=2.0",
-    "scikit-image>=0.20",
     "biopython>=1.80",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
 ]

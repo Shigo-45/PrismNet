@@ -28,7 +28,7 @@ for dataset in "${DATASETS[@]}"; do
 
     # Train on original split
     echo "1. Training on ORIGINAL split..."
-    cd /home/shigo-45/projects/PrismNet
+    cd "$(dirname "$0")/.."
     exp/prismnet/train.sh $dataset clip_data
 
     # Save results

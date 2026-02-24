@@ -17,3 +17,9 @@ exp/*
 !exp/IGF2BP1_infer/**
 icSHAPE/*
 visualization/figures/
+
+# Generated evaluation outputs (regenerate with tools/eval_splitting.py)
+evaluation/**/*.h5
+evaluation/**/*.fasta
+evaluation/**/*.log
+evaluation/**/*.probs

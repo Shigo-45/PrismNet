@@ -9,9 +9,17 @@ Creates three key visualizations:
 """
 
 import json
+import os
+import sys
 import matplotlib.pyplot as plt
 import numpy as np
 from pathlib import Path
+
+# Fix 4: Ensure script runs from the project root regardless of invocation directory
+project_root = Path(__file__).parent.parent
+if Path.cwd() != project_root:
+    print(f"WARNING: Script should be run from project root ({project_root}), not {Path.cwd()}")
+    os.chdir(project_root)
 
 # Set publication-quality style
 plt.style.use('seaborn-v0_8-paper')
@@ -149,11 +157,33 @@ def create_identity_distribution():
     plt.close()
 
 
+def _read_auc_from_metrics(metrics_path: Path) -> float:
+    """Read AUC score from a .metrics file.
+
+    Metrics file format (tab-separated):
+        protein_name  acc  auc  ...
+    AUC is the value at column index 2.
+    """
+    with open(metrics_path) as f:
+        line = f.readline().strip()
+    fields = line.split('\t')
+    return float(fields[2])
+
+
 def create_performance_comparison():
     """Visualization 3: Model performance comparison."""
-    # Data from validation results
+    # Fix 1: Read AUC scores from metrics files instead of hardcoding
+    original_metrics = Path(
+        'evaluation/cdhit_validation/TIA1_Hela_original/evals/TIA1_Hela_PrismNet_pu.metrics'
+    )
+    cdhit_metrics = Path(
+        'evaluation/cdhit_validation/TIA1_Hela_cdhit80/evals/TIA1_Hela_cdhit80_PrismNet_pu.metrics'
+    )
+    auc_original = _read_auc_from_metrics(original_metrics)
+    auc_cdhit = _read_auc_from_metrics(cdhit_metrics)
+
     splits = ['Original\n(Random)', 'CD-HIT\n(Homology-aware)']
-    auc_scores = [0.9609, 0.9561]
+    auc_scores = [auc_original, auc_cdhit]
     colors = ['#3498db', '#e74c3c']
 
     # Create figure with two subplots
@@ -179,7 +209,11 @@ def create_performance_comparison():
 
     # Subplot 2: Difference visualization
     difference = auc_scores[1] - auc_scores[0]
-    difference_pct = (difference / auc_scores[0]) * 100
+    # Fix 3: Guard against ZeroDivisionError when baseline AUC is zero
+    if auc_scores[0] != 0:
+        difference_pct = (difference / auc_scores[0]) * 100
+    else:
+        difference_pct = 0.0
 
     # Create a simple comparison
     ax2.barh(['Performance\nDifference'], [abs(difference_pct)],
@@ -239,11 +273,16 @@ def create_summary_stats_table():
 
     datasets_below_50 = sum(1 for m in max_identities if m < 50)
 
+    # Fix 2: Compute total sequence count dynamically from JSON (n_train + n_test per dataset)
+    total_sequences = sum(
+        d['original']['n_train'] + d['original']['n_test'] for d in data.values()
+    )
+
     # Create table data
     table_data = [
         ['Metric', 'Value'],
         ['Total datasets', f'{len(data)}'],
-        ['Total sequences', '2,580,344'],
+        ['Total sequences', f'{total_sequences:,}'],
         ['Datasets with 0% leakage', f'{clean_count} ({clean_count/len(data)*100:.1f}%)'],
         ['Datasets with minimal leakage', f'{leakage_count} ({leakage_count/len(data)*100:.1f}%)'],
         ['Mean identity', f'{np.mean(mean_identities):.1f}% ± {np.std(mean_identities):.1f}%'],

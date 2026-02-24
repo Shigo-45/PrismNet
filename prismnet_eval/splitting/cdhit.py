@@ -32,8 +32,7 @@ def cluster_sequences(fasta_path: Path, identity: float = 0.8) -> Dict[str, int]
         )
 
     # Create temporary output file
-    with tempfile.NamedTemporaryFile(suffix=".fasta", delete=False) as tmp_out:
-        output_path = Path(tmp_out.name)
+    output_path = Path(tempfile.mktemp(suffix=".fasta"))
 
     try:
         # Run cd-hit
@@ -51,26 +50,25 @@ def cluster_sequences(fasta_path: Path, identity: float = 0.8) -> Dict[str, int]
             "-T", "0",  # Use all available threads
         ]
 
-        result = subprocess.run(
-            cmd,
-            capture_output=True,
-            text=True,
-            check=True
-        )
+        try:
+            subprocess.run(
+                cmd,
+                capture_output=True,
+                text=True,
+                check=True
+            )
+        except subprocess.CalledProcessError as e:
+            raise RuntimeError(f"cd-hit failed: {e.stderr}")
 
         # Parse cluster file
         cluster_file = Path(str(output_path) + ".clstr")
         seq_to_cluster = _parse_clstr_file(cluster_file)
 
-        # Clean up temporary files
-        output_path.unlink(missing_ok=True)
-        cluster_file.unlink(missing_ok=True)
-
         return seq_to_cluster
 
-    except subprocess.CalledProcessError as e:
+    finally:
         output_path.unlink(missing_ok=True)
-        raise RuntimeError(f"cd-hit failed: {e.stderr}")
+        Path(str(output_path) + ".clstr").unlink(missing_ok=True)
 
 
 def _parse_clstr_file(clstr_path: Path) -> Dict[str, int]:
@@ -128,7 +126,7 @@ def split_by_clusters(
     Returns:
         Tuple of (train_seq_ids, test_seq_ids)
     """
-    np.random.seed(random_state)
+    rng = np.random.default_rng(random_state)
 
     # Group sequences by cluster
     cluster_to_seqs = {}
@@ -142,7 +140,7 @@ def split_by_clusters(
     cluster_sizes = np.array([len(cluster_to_seqs[cid]) for cid in cluster_ids])
 
     # Shuffle clusters
-    shuffle_idx = np.random.permutation(len(cluster_ids))
+    shuffle_idx = rng.permutation(len(cluster_ids))
     cluster_ids = [cluster_ids[i] for i in shuffle_idx]
     cluster_sizes = cluster_sizes[shuffle_idx]
 
@@ -150,12 +148,12 @@ def split_by_clusters(
     total_seqs = sum(cluster_sizes)
     target_test_size = int(total_seqs * test_fraction)
 
-    test_cluster_ids = []
+    test_cluster_ids = set()
     test_size = 0
 
     for cid, size in zip(cluster_ids, cluster_sizes):
         if test_size < target_test_size:
-            test_cluster_ids.append(cid)
+            test_cluster_ids.add(cid)
             test_size += size
         else:
             break
