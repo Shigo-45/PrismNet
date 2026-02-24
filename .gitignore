@@ -18,6 +18,8 @@ tmp/*
 !exp/logistic_reg/
 icSHAPE/*
 
+docs/
+
 # Evaluation results
 evaluation/
 mlruns/
