@@ -19,5 +19,12 @@ dependencies = [
 
 [project.optional-dependencies]
 eval = [
-    "scikit-image>=0.20",  # for SSIM in saliency sanity checks
+    "mlflow>=2.0",
+    "biopython>=1.80",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+    "scikit-image>=0.20",
 ]
