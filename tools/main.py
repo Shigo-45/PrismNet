@@ -11,6 +11,9 @@ from sklearn import metrics
 import numpy as np
 
 import prismnet.model as arch
+from prismnet_eval.ablation.baselines import PlainCNN2D1D
+# Register plain CNN for --arch PlainCNN2D1D
+arch.PlainCNN2D1D = PlainCNN2D1D
 from prismnet import train, validate, inference, log_print, compute_saliency, compute_saliency_img, compute_high_attention_region
 #compute_high_attention_region
 
@@ -93,6 +96,7 @@ def main():
     parser.add_argument('--out_dir',        type=str, default=".", help='output directory')
     parser.add_argument('--mode',           type=str, default="pu", help='data mode')
     parser.add_argument("--infer_file",     type=str, help="infer file", default="")
+    parser.add_argument("--model_path",     type=str, help="custom model checkpoint path (overrides default)", default="")
     # Training Hyper-parameter
     parser.add_argument('--arch',           default="PrismNet", help='network architecture')
     parser.add_argument('--lr_scheduler',   default="warmup", help=' lr scheduler: warmup/cosine')
@@ -119,6 +123,16 @@ def main():
     parser.add_argument('--log_interval',   type=int, default=100, help='log print interval')
     parser.add_argument('--seed',           type=int, default=1024, help='manual seed')
     args = parser.parse_args()
+
+    # Validate --model_path if provided
+    if args.model_path:
+        if not args.model_path.endswith('.pth'):
+            parser.error("--model_path must point to a .pth file")
+        if not os.path.exists(args.model_path):
+            parser.error(f"Model file not found: {args.model_path}")
+        # Make --model_path imply --load_best for convenience
+        args.load_best = True
+
     print(args)
     use_cuda = not args.no_cuda and torch.cuda.is_available()
     
@@ -159,8 +173,17 @@ def main():
     # print(model)
 
     if args.load_best:
-        filename = model_path.format("best")
-        print("Loading model: {}".format(filename))
+        if args.model_path:
+            filename = args.model_path
+            print("Loading custom model: {}".format(filename))
+        else:
+            filename = model_path.format("best")
+            print("Loading model: {}".format(filename))
+
+        # Validate file existence before loading
+        if not os.path.exists(filename):
+            raise FileNotFoundError(f"Model checkpoint not found: {filename}")
+
         model.load_state_dict(torch.load(filename,map_location='cpu'))
  
     model = model.to(device)

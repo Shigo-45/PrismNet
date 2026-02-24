@@ -44,8 +44,24 @@ Train all protein models:
 exp/prismnet/train_all.sh
 ```
 
-### Evaluation
-Evaluate a trained model:
+Training hyperparameters are configured in the shell scripts, which call `tools/main.py` with arguments.
+
+**IMPORTANT - Resource Management**:
+- **Do NOT run more than 3 PrismNet model training jobs in parallel** (including background jobs)
+- Check GPU status with `nvidia-smi` before starting training
+- Check RAM with `free -h` before starting training
+- Each training job can consume significant GPU memory and system resources
+
+**Key training options** (edit in train.sh):
+- `--lr`: Learning rate (default: 0.001)
+- `--batch_size`: Batch size (default: 64)
+- `--nepochs`: Number of epochs (default: 200)
+- `--early_stopping`: Early stopping patience (default: 20)
+- `--pos_weight`: Positive class weight for imbalanced data (default: 2)
+- `--mode`: Data mode - `pu` (protein+structure), `seq` (sequence only), or `str` (structure only)
+
+## Evaluation and Inference
+
 ```bash
 exp/prismnet/eval.sh <PROTEIN_NAME> <DATA_DIR>
 # Example: exp/prismnet/eval.sh TIA1_Hela clip_data
