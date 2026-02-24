@@ -14,8 +14,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/AARS_K562.h5"
+      "split_method": "original"
     }
   },
   "AATF_K562.h5": {
@@ -33,8 +32,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/AATF_K562.h5"
+      "split_method": "original"
     }
   },
   "ABCF1_K562.h5": {
@@ -52,8 +50,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/ABCF1_K562.h5"
+      "split_method": "original"
     }
   },
   "AGGF1_HepG2.h5": {
@@ -71,8 +68,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/AGGF1_HepG2.h5"
+      "split_method": "original"
     }
   },
   "AGO_HEK293.h5": {
@@ -90,8 +86,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/AGO_HEK293.h5"
+      "split_method": "original"
     }
   },
   "AKAP1_K562.h5": {
@@ -109,8 +104,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/AKAP1_K562.h5"
+      "split_method": "original"
     }
   },
   "AKAP8L_K562.h5": {
@@ -128,8 +122,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/AKAP8L_K562.h5"
+      "split_method": "original"
     }
   },
   "ALKBH5_HEK293.h5": {
@@ -147,8 +140,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/ALKBH5_HEK293.h5"
+      "split_method": "original"
     }
   },
   "APOBEC3C_K562.h5": {
@@ -166,8 +158,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/APOBEC3C_K562.h5"
+      "split_method": "original"
     }
   },
   "AQR_HepG2.h5": {
@@ -185,8 +176,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/AQR_HepG2.h5"
+      "split_method": "original"
     }
   },
   "ATXN2_HEK293T.h5": {
@@ -204,8 +194,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/ATXN2_HEK293T.h5"
+      "split_method": "original"
     }
   },
   "AUH_K562.h5": {
@@ -223,8 +212,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/AUH_K562.h5"
+      "split_method": "original"
     }
   },
   "BCCIP_HepG2.h5": {
@@ -242,8 +230,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/BCCIP_HepG2.h5"
+      "split_method": "original"
     }
   },
   "BCLAF1_HepG2.h5": {
@@ -261,8 +248,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/BCLAF1_HepG2.h5"
+      "split_method": "original"
     }
   },
   "BUD13_HepG2.h5": {
@@ -280,8 +266,7 @@
       "percentile_90": 0.32673267326732675,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/BUD13_HepG2.h5"
+      "split_method": "original"
     }
   },
   "C17ORF85_HEK293.h5": {
@@ -299,8 +284,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.3664356435643586,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/C17ORF85_HEK293.h5"
+      "split_method": "original"
     }
   },
   "C22ORF28_HEK293.h5": {
@@ -318,8 +302,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/C22ORF28_HEK293.h5"
+      "split_method": "original"
     }
   },
   "CAPRIN1_HEK293.h5": {
@@ -337,8 +320,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/CAPRIN1_HEK293.h5"
+      "split_method": "original"
     }
   },
   "CDC40_HepG2.h5": {
@@ -356,8 +338,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/CDC40_HepG2.h5"
+      "split_method": "original"
     }
   },
   "CPEB4_K562.h5": {
@@ -375,8 +356,7 @@
       "percentile_90": 0.3069306930693069,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/CPEB4_K562.h5"
+      "split_method": "original"
     }
   },
   "CPSF1_HEK293.h5": {
@@ -394,8 +374,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/CPSF1_HEK293.h5"
+      "split_method": "original"
     }
   },
   "CPSF2_HEK293.h5": {
@@ -413,8 +392,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/CPSF2_HEK293.h5"
+      "split_method": "original"
     }
   },
   "CPSF3_HEK293.h5": {
@@ -432,8 +410,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/CPSF3_HEK293.h5"
+      "split_method": "original"
     }
   },
   "CPSF4_HEK293.h5": {
@@ -451,8 +428,7 @@
       "percentile_90": 0.3069306930693069,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/CPSF4_HEK293.h5"
+      "split_method": "original"
     }
   },
   "CPSF6_K562.h5": {
@@ -470,8 +446,7 @@
       "percentile_90": 0.3069306930693069,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.3565346534653487,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/CPSF6_K562.h5"
+      "split_method": "original"
     }
   },
   "CPSF7_HEK293.h5": {
@@ -489,8 +464,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/CPSF7_HEK293.h5"
+      "split_method": "original"
     }
   },
   "CSTF2T_HepG2.h5": {
@@ -508,8 +482,7 @@
       "percentile_90": 0.32673267326732675,
       "percentile_95": 0.3465346534653465,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/CSTF2T_HepG2.h5"
+      "split_method": "original"
     }
   },
   "CSTF2_Hela.h5": {
@@ -527,8 +500,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/CSTF2_Hela.h5"
+      "split_method": "original"
     }
   },
   "DDX21_K562.h5": {
@@ -546,8 +518,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/DDX21_K562.h5"
+      "split_method": "original"
     }
   },
   "DDX24_K562.h5": {
@@ -565,8 +536,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/DDX24_K562.h5"
+      "split_method": "original"
     }
   },
   "DDX3X_K562.h5": {
@@ -584,8 +554,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/DDX3X_K562.h5"
+      "split_method": "original"
     }
   },
   "DDX42_K562.h5": {
@@ -603,8 +572,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/DDX42_K562.h5"
+      "split_method": "original"
     }
   },
   "DDX51_K562.h5": {
@@ -622,8 +590,7 @@
       "percentile_90": 0.32673267326732675,
       "percentile_95": 0.3465346534653465,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/DDX51_K562.h5"
+      "split_method": "original"
     }
   },
   "DDX52_K562.h5": {
@@ -641,8 +608,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/DDX52_K562.h5"
+      "split_method": "original"
     }
   },
   "DDX55_HepG2.h5": {
@@ -660,8 +626,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/DDX55_HepG2.h5"
+      "split_method": "original"
     }
   },
   "DDX59_HepG2.h5": {
@@ -679,8 +644,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/DDX59_HepG2.h5"
+      "split_method": "original"
     }
   },
   "DDX6_K562.h5": {
@@ -698,8 +662,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/DDX6_K562.h5"
+      "split_method": "original"
     }
   },
   "DGCR8_K562.h5": {
@@ -717,8 +680,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/DGCR8_K562.h5"
+      "split_method": "original"
     }
   },
   "DHX30_K562.h5": {
@@ -736,8 +698,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/DHX30_K562.h5"
+      "split_method": "original"
     }
   },
   "DKC1_HepG2.h5": {
@@ -755,8 +716,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/DKC1_HepG2.h5"
+      "split_method": "original"
     }
   },
   "DROSHA_K562.h5": {
@@ -774,8 +734,7 @@
       "percentile_90": 0.32673267326732675,
       "percentile_95": 0.3465346534653465,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/DROSHA_K562.h5"
+      "split_method": "original"
     }
   },
   "EFTUD2_HepG2.h5": {
@@ -793,8 +752,7 @@
       "percentile_90": 0.32673267326732675,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/EFTUD2_HepG2.h5"
+      "split_method": "original"
     }
   },
   "EIF3D_HepG2.h5": {
@@ -812,8 +770,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/EIF3D_HepG2.h5"
+      "split_method": "original"
     }
   },
   "EIF3G_K562.h5": {
@@ -831,8 +788,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/EIF3G_K562.h5"
+      "split_method": "original"
     }
   },
   "EIF3H_HepG2.h5": {
@@ -850,8 +806,7 @@
       "percentile_90": 0.32673267326732675,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/EIF3H_HepG2.h5"
+      "split_method": "original"
     }
   },
   "EIF4A3_Hela.h5": {
@@ -869,8 +824,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/EIF4A3_Hela.h5"
+      "split_method": "original"
     }
   },
   "EIF4G2_K562.h5": {
@@ -888,8 +842,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/EIF4G2_K562.h5"
+      "split_method": "original"
     }
   },
   "ELAVL1_Hela.h5": {
@@ -907,8 +860,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/ELAVL1_Hela.h5"
+      "split_method": "original"
     }
   },
   "EWSR1_HEK293.h5": {
@@ -926,8 +878,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/EWSR1_HEK293.h5"
+      "split_method": "original"
     }
   },
   "EXOSC5_HepG2.h5": {
@@ -945,8 +896,7 @@
       "percentile_90": 0.32673267326732675,
       "percentile_95": 0.3465346534653465,
       "percentile_99": 0.38613861386138615,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/EXOSC5_HepG2.h5"
+      "split_method": "original"
     }
   },
   "FAM120A_K562.h5": {
@@ -964,8 +914,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/FAM120A_K562.h5"
+      "split_method": "original"
     }
   },
   "FASTKD2_K562.h5": {
@@ -983,8 +932,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/FASTKD2_K562.h5"
+      "split_method": "original"
     }
   },
   "FBL_HEK293.h5": {
@@ -1002,8 +950,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/FBL_HEK293.h5"
+      "split_method": "original"
     }
   },
   "FIP1L1_HEK293.h5": {
@@ -1021,8 +968,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/FIP1L1_HEK293.h5"
+      "split_method": "original"
     }
   },
   "FKBP4_HepG2.h5": {
@@ -1040,8 +986,7 @@
       "percentile_90": 0.32673267326732675,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/FKBP4_HepG2.h5"
+      "split_method": "original"
     }
   },
   "FMR1_K562.h5": {
@@ -1059,8 +1004,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/FMR1_K562.h5"
+      "split_method": "original"
     }
   },
   "FTO_K562.h5": {
@@ -1078,8 +1022,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/FTO_K562.h5"
+      "split_method": "original"
     }
   },
   "FUS_HEK293.h5": {
@@ -1097,8 +1040,7 @@
       "percentile_90": 0.3069306930693069,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/FUS_HEK293.h5"
+      "split_method": "original"
     }
   },
   "FXR1_HEK293.h5": {
@@ -1116,8 +1058,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/FXR1_HEK293.h5"
+      "split_method": "original"
     }
   },
   "FXR2_K562.h5": {
@@ -1135,8 +1076,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/FXR2_K562.h5"
+      "split_method": "original"
     }
   },
   "G3BP1_HepG2.h5": {
@@ -1154,8 +1094,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/G3BP1_HepG2.h5"
+      "split_method": "original"
     }
   },
   "GEMIN5_K562.h5": {
@@ -1173,8 +1112,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/GEMIN5_K562.h5"
+      "split_method": "original"
     }
   },
   "GNL3_K562.h5": {
@@ -1192,8 +1130,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/GNL3_K562.h5"
+      "split_method": "original"
     }
   },
   "GPKOW_K562.h5": {
@@ -1211,8 +1148,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/GPKOW_K562.h5"
+      "split_method": "original"
     }
   },
   "GRWD1_K562.h5": {
@@ -1230,8 +1166,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/GRWD1_K562.h5"
+      "split_method": "original"
     }
   },
   "GTF2F1_K562.h5": {
@@ -1249,8 +1184,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/GTF2F1_K562.h5"
+      "split_method": "original"
     }
   },
   "HLTF_K562.h5": {
@@ -1268,8 +1202,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/HLTF_K562.h5"
+      "split_method": "original"
     }
   },
   "HNRNPA1_K562.h5": {
@@ -1287,8 +1220,7 @@
       "percentile_90": 0.3069306930693069,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/HNRNPA1_K562.h5"
+      "split_method": "original"
     }
   },
   "HNRNPC_Hela.h5": {
@@ -1306,8 +1238,7 @@
       "percentile_90": 0.3069306930693069,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/HNRNPC_Hela.h5"
+      "split_method": "original"
     }
   },
   "HNRNPD_HEK293.h5": {
@@ -1325,8 +1256,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/HNRNPD_HEK293.h5"
+      "split_method": "original"
     }
   },
   "HNRNPF_HEK293T.h5": {
@@ -1344,8 +1274,7 @@
       "percentile_90": 0.3069306930693069,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.3564356435643564,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/HNRNPF_HEK293T.h5"
+      "split_method": "original"
     }
   },
   "HNRNPK_K562.h5": {
@@ -1363,8 +1292,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/HNRNPK_K562.h5"
+      "split_method": "original"
     }
   },
   "HNRNPM_K562.h5": {
@@ -1382,8 +1310,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/HNRNPM_K562.h5"
+      "split_method": "original"
     }
   },
   "HNRNPUL1_K562.h5": {
@@ -1401,8 +1328,7 @@
       "percentile_90": 0.3069306930693069,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/HNRNPUL1_K562.h5"
+      "split_method": "original"
     }
   },
   "HNRNPU_Hela.h5": {
@@ -1420,8 +1346,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/HNRNPU_Hela.h5"
+      "split_method": "original"
     }
   },
   "IGF2BP1_K562.h5": {
@@ -1439,8 +1364,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/IGF2BP1_K562.h5"
+      "split_method": "original"
     }
   },
   "IGF2BP2_HEK293.h5": {
@@ -1458,8 +1382,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/IGF2BP2_HEK293.h5"
+      "split_method": "original"
     }
   },
   "IGF2BP3_HEK293.h5": {
@@ -1477,8 +1400,7 @@
       "percentile_90": 0.3069306930693069,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/IGF2BP3_HEK293.h5"
+      "split_method": "original"
     }
   },
   "ILF3_K562.h5": {
@@ -1496,8 +1418,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/ILF3_K562.h5"
+      "split_method": "original"
     }
   },
   "KHDRBS1_K562.h5": {
@@ -1515,8 +1436,7 @@
       "percentile_90": 0.3069306930693069,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/KHDRBS1_K562.h5"
+      "split_method": "original"
     }
   },
   "KHSRP_K562.h5": {
@@ -1534,8 +1454,7 @@
       "percentile_90": 0.3069306930693069,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/KHSRP_K562.h5"
+      "split_method": "original"
     }
   },
   "LARP4_HepG2.h5": {
@@ -1553,8 +1472,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/LARP4_HepG2.h5"
+      "split_method": "original"
     }
   },
   "LARP7_K562.h5": {
@@ -1572,8 +1490,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/LARP7_K562.h5"
+      "split_method": "original"
     }
   },
   "LIN28A_H9.h5": {
@@ -1591,8 +1508,7 @@
       "percentile_90": 0.3069306930693069,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/LIN28A_H9.h5"
+      "split_method": "original"
     }
   },
   "LIN28B_K562.h5": {
@@ -1610,8 +1526,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/LIN28B_K562.h5"
+      "split_method": "original"
     }
   },
   "LSM11_K562.h5": {
@@ -1629,8 +1544,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/LSM11_K562.h5"
+      "split_method": "original"
     }
   },
   "METAP2_K562.h5": {
@@ -1648,8 +1562,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/METAP2_K562.h5"
+      "split_method": "original"
     }
   },
   "METTL14_Hela.h5": {
@@ -1667,8 +1580,7 @@
       "percentile_90": 0.3069306930693069,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.3564356435643564,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/METTL14_Hela.h5"
+      "split_method": "original"
     }
   },
   "METTL3_Hela.h5": {
@@ -1686,8 +1598,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/METTL3_Hela.h5"
+      "split_method": "original"
     }
   },
   "MOV10_HEK293.h5": {
@@ -1705,8 +1616,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/MOV10_HEK293.h5"
+      "split_method": "original"
     }
   },
   "MTPAP_K562.h5": {
@@ -1724,8 +1634,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/MTPAP_K562.h5"
+      "split_method": "original"
     }
   },
   "NCBP2_HepG2.h5": {
@@ -1743,8 +1652,7 @@
       "percentile_90": 0.32673267326732675,
       "percentile_95": 0.3465346534653465,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/NCBP2_HepG2.h5"
+      "split_method": "original"
     }
   },
   "NIP7_HepG2.h5": {
@@ -1762,8 +1670,7 @@
       "percentile_90": 0.32673267326732675,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/NIP7_HepG2.h5"
+      "split_method": "original"
     }
   },
   "NIPBL_K562.h5": {
@@ -1781,8 +1688,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/NIPBL_K562.h5"
+      "split_method": "original"
     }
   },
   "NKRF_HepG2.h5": {
@@ -1800,8 +1706,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/NKRF_HepG2.h5"
+      "split_method": "original"
     }
   },
   "NOL12_HepG2.h5": {
@@ -1819,8 +1724,7 @@
       "percentile_90": 0.32673267326732675,
       "percentile_95": 0.3465346534653465,
       "percentile_99": 0.38613861386138615,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/NOL12_HepG2.h5"
+      "split_method": "original"
     }
   },
   "NOLC1_K562.h5": {
@@ -1838,8 +1742,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/NOLC1_K562.h5"
+      "split_method": "original"
     }
   },
   "NONO_K562.h5": {
@@ -1857,8 +1760,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/NONO_K562.h5"
+      "split_method": "original"
     }
   },
   "NOP56_HEK293.h5": {
@@ -1876,8 +1778,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/NOP56_HEK293.h5"
+      "split_method": "original"
     }
   },
   "NOP58_HEK293.h5": {
@@ -1895,8 +1796,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/NOP58_HEK293.h5"
+      "split_method": "original"
     }
   },
   "NPM1_K562.h5": {
@@ -1914,8 +1814,7 @@
       "percentile_90": 0.3069306930693069,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/NPM1_K562.h5"
+      "split_method": "original"
     }
   },
   "NUDT21_HEK293.h5": {
@@ -1933,8 +1832,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/NUDT21_HEK293.h5"
+      "split_method": "original"
     }
   },
   "PABPC4_K562.h5": {
@@ -1952,8 +1850,7 @@
       "percentile_90": 0.3079207920792115,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/PABPC4_K562.h5"
+      "split_method": "original"
     }
   },
   "PABPN1_HepG2.h5": {
@@ -1971,8 +1868,7 @@
       "percentile_90": 0.32673267326732675,
       "percentile_95": 0.3465346534653465,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/PABPN1_HepG2.h5"
+      "split_method": "original"
     }
   },
   "PCBP1_K562.h5": {
@@ -1990,8 +1886,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/PCBP1_K562.h5"
+      "split_method": "original"
     }
   },
   "PCBP2_HepG2.h5": {
@@ -2009,8 +1904,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/PCBP2_HepG2.h5"
+      "split_method": "original"
     }
   },
   "PHF6_K562.h5": {
@@ -2028,8 +1922,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/PHF6_K562.h5"
+      "split_method": "original"
     }
   },
   "PPIG_HepG2.h5": {
@@ -2047,8 +1940,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/PPIG_HepG2.h5"
+      "split_method": "original"
     }
   },
   "PRPF4_HepG2.h5": {
@@ -2066,8 +1958,7 @@
       "percentile_90": 0.32673267326732675,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/PRPF4_HepG2.h5"
+      "split_method": "original"
     }
   },
   "PRPF8_K562.h5": {
@@ -2085,8 +1976,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/PRPF8_K562.h5"
+      "split_method": "original"
     }
   },
   "PTBP1PTBP2_Hela.h5": {
@@ -2104,8 +1994,7 @@
       "percentile_90": 0.3069306930693069,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/PTBP1PTBP2_Hela.h5"
+      "split_method": "original"
     }
   },
   "PTBP1_Hela.h5": {
@@ -2123,8 +2012,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/PTBP1_Hela.h5"
+      "split_method": "original"
     }
   },
   "PUM1_K562.h5": {
@@ -2142,8 +2030,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/PUM1_K562.h5"
+      "split_method": "original"
     }
   },
   "PUM2_HEK293.h5": {
@@ -2161,8 +2048,7 @@
       "percentile_90": 0.3069306930693069,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/PUM2_HEK293.h5"
+      "split_method": "original"
     }
   },
   "PUS1_K562.h5": {
@@ -2180,8 +2066,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/PUS1_K562.h5"
+      "split_method": "original"
     }
   },
   "QKI_HEK293.h5": {
@@ -2199,8 +2084,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/QKI_HEK293.h5"
+      "split_method": "original"
     }
   },
   "RBFOX2_HepG2.h5": {
@@ -2218,8 +2102,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/RBFOX2_HepG2.h5"
+      "split_method": "original"
     }
   },
   "RBM15_K562.h5": {
@@ -2237,8 +2120,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/RBM15_K562.h5"
+      "split_method": "original"
     }
   },
   "RBM22_K562.h5": {
@@ -2256,8 +2138,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/RBM22_K562.h5"
+      "split_method": "original"
     }
   },
   "RBM27_K562.h5": {
@@ -2275,8 +2156,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/RBM27_K562.h5"
+      "split_method": "original"
     }
   },
   "RBPMS_HEK293.h5": {
@@ -2294,8 +2174,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/RBPMS_HEK293.h5"
+      "split_method": "original"
     }
   },
   "RPS11_K562.h5": {
@@ -2313,8 +2192,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/RPS11_K562.h5"
+      "split_method": "original"
     }
   },
   "RPS3_K562.h5": {
@@ -2332,8 +2210,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/RPS3_K562.h5"
+      "split_method": "original"
     }
   },
   "RTCB_HEK293.h5": {
@@ -2351,8 +2228,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/RTCB_HEK293.h5"
+      "split_method": "original"
     }
   },
   "SAFB2_K562.h5": {
@@ -2370,8 +2246,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/SAFB2_K562.h5"
+      "split_method": "original"
     }
   },
   "SBDS_K562.h5": {
@@ -2389,8 +2264,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/SBDS_K562.h5"
+      "split_method": "original"
     }
   },
   "SDAD1_K562.h5": {
@@ -2408,8 +2282,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.3465346534653465,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/SDAD1_K562.h5"
+      "split_method": "original"
     }
   },
   "SERBP1_K562.h5": {
@@ -2427,8 +2300,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/SERBP1_K562.h5"
+      "split_method": "original"
     }
   },
   "SF3A3_HepG2.h5": {
@@ -2446,8 +2318,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/SF3A3_HepG2.h5"
+      "split_method": "original"
     }
   },
   "SF3B1_K562.h5": {
@@ -2465,8 +2336,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/SF3B1_K562.h5"
+      "split_method": "original"
     }
   },
   "SF3B4_HepG2.h5": {
@@ -2484,8 +2354,7 @@
       "percentile_90": 0.32673267326732675,
       "percentile_95": 0.3465346534653465,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/SF3B4_HepG2.h5"
+      "split_method": "original"
     }
   },
   "SLBP_K562.h5": {
@@ -2503,8 +2372,7 @@
       "percentile_90": 0.3069306930693069,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/SLBP_K562.h5"
+      "split_method": "original"
     }
   },
   "SLTM_K562.h5": {
@@ -2522,8 +2390,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/SLTM_K562.h5"
+      "split_method": "original"
     }
   },
   "SMNDC1_K562.h5": {
@@ -2541,8 +2408,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/SMNDC1_K562.h5"
+      "split_method": "original"
     }
   },
   "SND1_K562.h5": {
@@ -2560,8 +2426,7 @@
       "percentile_90": 0.3069306930693069,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.3564356435643564,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/SND1_K562.h5"
+      "split_method": "original"
     }
   },
   "SRRM4_HEK293T.h5": {
@@ -2579,8 +2444,7 @@
       "percentile_90": 0.3069306930693069,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/SRRM4_HEK293T.h5"
+      "split_method": "original"
     }
   },
   "SRSF1_HepG2.h5": {
@@ -2598,8 +2462,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/SRSF1_HepG2.h5"
+      "split_method": "original"
     }
   },
   "SRSF7_K562.h5": {
@@ -2617,8 +2480,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/SRSF7_K562.h5"
+      "split_method": "original"
     }
   },
   "SRSF9_HepG2.h5": {
@@ -2636,8 +2498,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/SRSF9_HepG2.h5"
+      "split_method": "original"
     }
   },
   "SUB1_HepG2.h5": {
@@ -2655,8 +2516,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/SUB1_HepG2.h5"
+      "split_method": "original"
     }
   },
   "SUPV3L1_K562.h5": {
@@ -2674,8 +2534,7 @@
       "percentile_90": 0.3069306930693069,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/SUPV3L1_K562.h5"
+      "split_method": "original"
     }
   },
   "TAF15_HEK293.h5": {
@@ -2693,8 +2552,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/TAF15_HEK293.h5"
+      "split_method": "original"
     }
   },
   "TARDBP_K562.h5": {
@@ -2712,8 +2570,7 @@
       "percentile_90": 0.3069306930693069,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/TARDBP_K562.h5"
+      "split_method": "original"
     }
   },
   "TBRG4_K562.h5": {
@@ -2731,8 +2588,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/TBRG4_K562.h5"
+      "split_method": "original"
     }
   },
   "TIA1_Hela.h5": {
@@ -2750,8 +2606,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/TIA1_Hela.h5"
+      "split_method": "original"
     }
   },
   "TIAL1_Hela.h5": {
@@ -2769,8 +2624,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/TIAL1_Hela.h5"
+      "split_method": "original"
     }
   },
   "TNRC6A_K562.h5": {
@@ -2788,8 +2642,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/TNRC6A_K562.h5"
+      "split_method": "original"
     }
   },
   "TRA2A_K562.h5": {
@@ -2807,8 +2660,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/TRA2A_K562.h5"
+      "split_method": "original"
     }
   },
   "TROVE2_K562.h5": {
@@ -2826,8 +2678,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/TROVE2_K562.h5"
+      "split_method": "original"
     }
   },
   "U2AF1_K562.h5": {
@@ -2845,8 +2696,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/U2AF1_K562.h5"
+      "split_method": "original"
     }
   },
   "U2AF2_Hela.h5": {
@@ -2864,8 +2714,7 @@
       "percentile_90": 0.3069306930693069,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.3564356435643564,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/U2AF2_Hela.h5"
+      "split_method": "original"
     }
   },
   "U2AF65_Hela.h5": {
@@ -2883,8 +2732,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/U2AF65_Hela.h5"
+      "split_method": "original"
     }
   },
   "UCHL5_K562.h5": {
@@ -2902,8 +2750,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/UCHL5_K562.h5"
+      "split_method": "original"
     }
   },
   "UPF1_Hela.h5": {
@@ -2921,8 +2768,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/UPF1_Hela.h5"
+      "split_method": "original"
     }
   },
   "UTP18_K562.h5": {
@@ -2940,8 +2786,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/UTP18_K562.h5"
+      "split_method": "original"
     }
   },
   "UTP3_K562.h5": {
@@ -2959,8 +2804,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/UTP3_K562.h5"
+      "split_method": "original"
     }
   },
   "WDR33_HEK293.h5": {
@@ -2978,8 +2822,7 @@
       "percentile_90": 0.3069306930693069,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/WDR33_HEK293.h5"
+      "split_method": "original"
     }
   },
   "WDR3_K562.h5": {
@@ -2997,8 +2840,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/WDR3_K562.h5"
+      "split_method": "original"
     }
   },
   "WDR43_K562.h5": {
@@ -3016,8 +2858,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/WDR43_K562.h5"
+      "split_method": "original"
     }
   },
   "WRN_K562.h5": {
@@ -3035,8 +2876,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/WRN_K562.h5"
+      "split_method": "original"
     }
   },
   "WTAP_Hela.h5": {
@@ -3054,8 +2894,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/WTAP_Hela.h5"
+      "split_method": "original"
     }
   },
   "XRCC6_K562.h5": {
@@ -3073,8 +2912,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/XRCC6_K562.h5"
+      "split_method": "original"
     }
   },
   "XRN2_K562.h5": {
@@ -3092,8 +2930,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/XRN2_K562.h5"
+      "split_method": "original"
     }
   },
   "YBX3_K562.h5": {
@@ -3111,8 +2948,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/YBX3_K562.h5"
+      "split_method": "original"
     }
   },
   "YTHDF2_Hela.h5": {
@@ -3130,8 +2966,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/YTHDF2_Hela.h5"
+      "split_method": "original"
     }
   },
   "YWHAG_K562.h5": {
@@ -3149,8 +2984,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/YWHAG_K562.h5"
+      "split_method": "original"
     }
   },
   "ZC3H11A_HepG2.h5": {
@@ -3168,8 +3002,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/ZC3H11A_HepG2.h5"
+      "split_method": "original"
     }
   },
   "ZC3H7B_HEK293.h5": {
@@ -3187,8 +3020,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/ZC3H7B_HEK293.h5"
+      "split_method": "original"
     }
   },
   "ZNF622_K562.h5": {
@@ -3206,8 +3038,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/ZNF622_K562.h5"
+      "split_method": "original"
     }
   },
   "ZNF800_K562.h5": {
@@ -3225,8 +3056,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/ZNF800_K562.h5"
+      "split_method": "original"
     }
   },
   "ZRANB2_K562.h5": {
@@ -3244,8 +3074,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/ZRANB2_K562.h5"
+      "split_method": "original"
     }
   },
   "eIF4AIII_Hela.h5": {
@@ -3263,8 +3092,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "/home/shigo-45/projects/PrismNet/data/clip_data/eIF4AIII_Hela.h5"
+      "split_method": "original"
     }
   }
 }

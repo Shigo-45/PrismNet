@@ -122,13 +122,12 @@ Based on homology analysis:
 
 ## Monitoring
 
-**Training logs:** `/tmp/claude-1000/-home-shigo-45-projects-PrismNet/tasks/b7fadb4.output`
 **Output directory:** `exp/prismnet/out/`
 **Results will be saved to:** `evaluation/cdhit_validation/`
 
 **Check progress:**
 ```bash
-tail -f /tmp/claude-1000/-home-shigo-45-projects-PrismNet/tasks/b7fadb4.output
+tail -f exp/prismnet/out/logs/<protein_name>.log
 ```
 
 ---

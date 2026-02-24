@@ -14,8 +14,7 @@
       "percentile_90": 0.3069306930693069,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "data/TIA1_Hela.h5"
+      "split_method": "original"
     },
     "cdhit": {
       "n_train": 12002,
@@ -31,8 +30,7 @@
       "percentile_90": 0.3069306930693069,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "evaluation/full_eval/TIA1_Hela_cdhit80.h5"
+      "split_method": "original"
     }
   },
   "IGF2BP1_K562.h5": {
@@ -50,8 +48,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "data/IGF2BP1_K562.h5"
+      "split_method": "original"
     },
     "cdhit": {
       "n_train": 12002,
@@ -67,8 +64,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "evaluation/full_eval/IGF2BP1_K562_cdhit80.h5"
+      "split_method": "original"
     }
   },
   "SRSF1_HepG2.h5": {
@@ -86,8 +82,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "data/SRSF1_HepG2.h5"
+      "split_method": "original"
     },
     "cdhit": {
       "n_train": 12002,
@@ -103,8 +98,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.37623762376237624,
-      "split_method": "original",
-      "h5_path": "evaluation/full_eval/SRSF1_HepG2_cdhit80.h5"
+      "split_method": "original"
     }
   }
 }

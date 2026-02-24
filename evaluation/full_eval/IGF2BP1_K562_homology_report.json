@@ -14,8 +14,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "data/IGF2BP1_K562.h5"
+      "split_method": "original"
     },
     "cdhit": {
       "n_train": 12002,
@@ -31,8 +30,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "evaluation/full_eval/IGF2BP1_K562_cdhit80.h5"
+      "split_method": "original"
     }
   },
   "summary": {

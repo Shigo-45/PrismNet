@@ -14,8 +14,7 @@
       "percentile_90": 0.31683168316831684,
       "percentile_95": 0.33663366336633666,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "data/TIA1_Hela.h5"
+      "split_method": "original"
     },
     "cdhit": {
       "n_train": 12002,
@@ -31,8 +30,7 @@
       "percentile_90": 0.3069306930693069,
       "percentile_95": 0.32673267326732675,
       "percentile_99": 0.36633663366336633,
-      "split_method": "original",
-      "h5_path": "evaluation/test/TIA1_Hela_cdhit80.h5"
+      "split_method": "original"
     }
   },
   "summary": {

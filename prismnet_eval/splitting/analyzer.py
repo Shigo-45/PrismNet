@@ -225,7 +225,6 @@ def analyze_existing_split(
     )
 
     stats["split_method"] = "original"
-    stats["h5_path"] = str(h5_path)
 
     return stats
 
