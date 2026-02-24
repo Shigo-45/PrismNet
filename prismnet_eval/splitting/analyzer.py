@@ -30,7 +30,8 @@ def extract_sequences_from_h5(h5_path: Path, dataset: str = "X_train") -> List[T
         X = f[dataset][:]  # Shape: (samples, features, seq_len) or (samples, 1, seq_len, n_features)
 
     assert X.ndim in (3, 4), f"Unexpected shape: {X.shape}"
-    if X.ndim == 4:
+    was_4d = X.ndim == 4
+    if was_4d:
         X = X[:, 0, :, :]  # Remove channel dim -> (samples, seq_len, n_features)
 
     # Extract nucleotide sequences from one-hot encoding
@@ -39,14 +40,12 @@ def extract_sequences_from_h5(h5_path: Path, dataset: str = "X_train") -> List[T
     sequences = []
 
     for i, sample in enumerate(X):
-        if X.ndim == 3 and sample.shape[0] == X.shape[1]:
-            # 3D path: original shape (samples, features, seq_len)
-            # sample shape is (features, seq_len), first 4 rows are nucleotide channels
+        if not was_4d:
+            # 3D: shape (samples, features, seq_len), sample is (features, seq_len)
             one_hot = sample[:4, :]  # Shape: (4, seq_len)
             seq_indices = np.argmax(one_hot, axis=0)
         else:
-            # 4D path after squeeze: sample shape is (seq_len, n_features)
-            # features are on axis 1, first 4 columns are nucleotide channels
+            # 4D squeezed to 3D: shape (samples, seq_len, n_features), sample is (seq_len, n_features)
             one_hot = sample[:, :4].T  # Shape: (4, seq_len)
             seq_indices = np.argmax(one_hot, axis=0)
 
