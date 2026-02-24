@@ -9,6 +9,7 @@ This script analyzes results from all 171 RBP evaluations and generates:
 - Comprehensive summary report
 """
 
+import argparse
 import json
 from pathlib import Path
 from typing import Dict, List, Tuple
@@ -92,8 +93,7 @@ def classify_result(tvr_ssim: float, rvr_ssim: float,
     spearman_ratio = tvr_spearman / rvr_spearman if rvr_spearman != 0 else float('inf')
 
     # Strong pass: Clear divergence
-    if (tvr_ssim < 0.1 and tvr_spearman < 0.2 and
-        (ssim_ratio > 1.5 or ssim_ratio < 0.7)):
+    if tvr_ssim < 0.1 and tvr_spearman < 0.2 and ssim_ratio < 0.7:
         return "strong_pass"
 
     # Moderate pass: Some divergence
@@ -379,24 +379,19 @@ def generate_statistical_report(df: pd.DataFrame, output_dir: Path):
     # Statistical tests
     report.append("### Statistical Significance\n")
 
-    # Paired t-test: trained vs random vs random vs random
-    tvr_ssim = df['tvr_ssim'].dropna()
-    rvr_ssim = df['rvr_ssim'].dropna()
-
-    if len(tvr_ssim) > 0 and len(rvr_ssim) > 0:
-        t_stat, p_value = stats.ttest_ind(tvr_ssim, rvr_ssim)
-        report.append(f"**SSIM Comparison** (Independent t-test):")
+    common_ssim = df.dropna(subset=["tvr_ssim", "rvr_ssim"])
+    if len(common_ssim) > 1:
+        t_stat, p_value = stats.ttest_rel(common_ssim["tvr_ssim"], common_ssim["rvr_ssim"])
+        report.append(f"**SSIM Comparison** (Paired t-test):")
         report.append(f"  - t-statistic: {t_stat:.4f}")
         report.append(f"  - p-value: {p_value:.4e}")
         report.append(f"  - Significant: {'Yes' if p_value < 0.05 else 'No'} (α=0.05)")
         report.append("")
 
-    tvr_spearman = df['tvr_spearman'].dropna()
-    rvr_spearman = df['rvr_spearman'].dropna()
-
-    if len(tvr_spearman) > 0 and len(rvr_spearman) > 0:
-        t_stat, p_value = stats.ttest_ind(tvr_spearman, rvr_spearman)
-        report.append(f"**Spearman Comparison** (Independent t-test):")
+    common_spearman = df.dropna(subset=["tvr_spearman", "rvr_spearman"])
+    if len(common_spearman) > 1:
+        t_stat, p_value = stats.ttest_rel(common_spearman["tvr_spearman"], common_spearman["rvr_spearman"])
+        report.append(f"**Spearman Comparison** (Paired t-test):")
         report.append(f"  - t-statistic: {t_stat:.4f}")
         report.append(f"  - p-value: {p_value:.4e}")
         report.append(f"  - Significant: {'Yes' if p_value < 0.05 else 'No'} (α=0.05)")
@@ -453,7 +448,12 @@ def generate_statistical_report(df: pd.DataFrame, output_dir: Path):
 
 
 def main():
-    eval_dir = Path("/home/shigo-45/projects/PrismNet-eval-saliency/evaluation/saliency/comprehensive_evaluation")
+    parser = argparse.ArgumentParser(description="Comprehensive analysis of saliency evaluation results.")
+    parser.add_argument("--eval-dir", type=Path, required=True,
+                        help="Directory containing per-protein evaluation results")
+    args = parser.parse_args()
+
+    eval_dir = args.eval_dir
     output_dir = eval_dir / "analysis"
     output_dir.mkdir(exist_ok=True)
 

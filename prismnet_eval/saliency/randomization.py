@@ -83,17 +83,31 @@ def compute_similarity_metrics(
         print(f"Warning: {spearman_dropout_rate*100:.1f}% of samples dropped for Spearman calculation")
 
     return {
-        "ssim_mean": float(np.mean(ssim_scores)) if ssim_scores else 0.0,
-        "ssim_std": float(np.std(ssim_scores)) if ssim_scores else 0.0,
+        "ssim_mean": float(np.mean(ssim_scores)) if ssim_scores else float("nan"),
+        "ssim_std": float(np.std(ssim_scores)) if ssim_scores else float("nan"),
         "ssim_n_valid": n_valid_ssim,
         "ssim_n_total": total_samples,
-        "spearman_mean": float(np.mean(spearman_scores)) if spearman_scores else 0.0,
-        "spearman_std": float(np.std(spearman_scores)) if spearman_scores else 0.0,
+        "spearman_mean": float(np.mean(spearman_scores)) if spearman_scores else float("nan"),
+        "spearman_std": float(np.std(spearman_scores)) if spearman_scores else float("nan"),
         "spearman_n_valid": n_valid_spearman,
         "spearman_n_total": total_samples,
         "l2_mean": float(np.mean(l2_distances)),
         "l2_std": float(np.std(l2_distances)),
     }
+
+
+def _init_layer_weights(m: nn.Module) -> None:
+    """Reinitialize layer weights using PrismNet's initialization scheme."""
+    if isinstance(m, (nn.Conv2d, nn.Conv1d)):
+        nn.init.kaiming_normal_(m.weight, mode="fan_out", nonlinearity="relu")
+        if m.bias is not None:
+            nn.init.constant_(m.bias, 0)
+    elif isinstance(m, (nn.BatchNorm2d, nn.BatchNorm1d)):
+        nn.init.constant_(m.weight, 1)
+        nn.init.constant_(m.bias, 0)
+    elif isinstance(m, nn.Linear):
+        nn.init.normal_(m.weight, 0, 0.01)
+        nn.init.constant_(m.bias, 0)
 
 
 def _randomize_model_weights(model: nn.Module) -> nn.Module:
@@ -117,19 +131,7 @@ def _randomize_model_weights(model: nn.Module) -> nn.Module:
     model_copy = copy.deepcopy(model)
 
     # Reinitialize all parameters using PrismNet's initialization scheme
-    def init_weights(m):
-        if isinstance(m, (nn.Conv2d, nn.Conv1d)):
-            nn.init.kaiming_normal_(m.weight, mode="fan_out", nonlinearity="relu")
-            if m.bias is not None:
-                nn.init.constant_(m.bias, 0)
-        elif isinstance(m, (nn.BatchNorm2d, nn.BatchNorm1d)):
-            nn.init.constant_(m.weight, 1)
-            nn.init.constant_(m.bias, 0)
-        elif isinstance(m, nn.Linear):
-            nn.init.normal_(m.weight, 0, 0.01)
-            nn.init.constant_(m.bias, 0)
-
-    model_copy.apply(init_weights)
+    model_copy.apply(_init_layer_weights)
     return model_copy
 
 
@@ -137,7 +139,7 @@ def _compute_saliency_for_samples(
     model: nn.Module,
     data_loader: DataLoader,
     n_samples: int,
-    device: str = "cuda" if torch.cuda.is_available() else "cpu",
+    device: str = None,
 ) -> torch.Tensor:
     """Compute saliency maps for n_samples from the data loader.
 
@@ -150,6 +152,8 @@ def _compute_saliency_for_samples(
     Returns:
         Tensor of saliency maps (n_samples, 1, seq_len, features)
     """
+    if device is None:
+        device = "cuda" if torch.cuda.is_available() else "cpu"
     model = model.to(device)
     model.eval()
 
@@ -183,7 +187,7 @@ def full_randomization_test(
     test_loader: DataLoader,
     n_random: int = 5,
     n_samples: int = 100,
-    device: str = "cuda" if torch.cuda.is_available() else "cpu",
+    device: str = None,
 ) -> Dict:
     """Compare saliency from trained vs fully random models.
 
@@ -209,6 +213,9 @@ def full_randomization_test(
         raise ValueError("trained_model must be in eval mode (call model.eval())")
     if len(test_loader.dataset) == 0:
         raise ValueError("test_loader has empty dataset")
+
+    if device is None:
+        device = "cuda" if torch.cuda.is_available() else "cpu"
 
     print(f"Computing saliency for trained model on {n_samples} samples...")
     trained_saliency = _compute_saliency_for_samples(
@@ -275,7 +282,7 @@ def cascading_randomization_test(
     trained_model: nn.Module,
     test_loader: DataLoader,
     n_samples: int = 100,
-    device: str = "cuda" if torch.cuda.is_available() else "cpu",
+    device: str = None,
 ) -> Dict:
     """Progressively randomize layers from top (output) to bottom (input).
 
@@ -298,6 +305,9 @@ def cascading_randomization_test(
         raise ValueError("trained_model must be in eval mode (call model.eval())")
     if len(test_loader.dataset) == 0:
         raise ValueError("test_loader has empty dataset")
+
+    if device is None:
+        device = "cuda" if torch.cuda.is_available() else "cpu"
 
     print(f"Computing saliency for trained model on {n_samples} samples...")
     trained_saliency = _compute_saliency_for_samples(
@@ -323,22 +333,7 @@ def cascading_randomization_test(
             if hasattr(model_copy, target_layer):
                 layer = getattr(model_copy, target_layer)
 
-                # Reinitialize this layer
-                def init_weights(m):
-                    if isinstance(m, (nn.Conv2d, nn.Conv1d)):
-                        nn.init.kaiming_normal_(
-                            m.weight, mode="fan_out", nonlinearity="relu"
-                        )
-                        if m.bias is not None:
-                            nn.init.constant_(m.bias, 0)
-                    elif isinstance(m, (nn.BatchNorm2d, nn.BatchNorm1d)):
-                        nn.init.constant_(m.weight, 1)
-                        nn.init.constant_(m.bias, 0)
-                    elif isinstance(m, nn.Linear):
-                        nn.init.normal_(m.weight, 0, 0.01)
-                        nn.init.constant_(m.bias, 0)
-
-                layer.apply(init_weights)
+                layer.apply(_init_layer_weights)
 
         # Compute saliency with partially randomized model
         partial_saliency = _compute_saliency_for_samples(
