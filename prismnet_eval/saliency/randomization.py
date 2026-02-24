@@ -107,7 +107,8 @@ def _init_layer_weights(m: nn.Module) -> None:
         nn.init.constant_(m.bias, 0)
     elif isinstance(m, nn.Linear):
         nn.init.normal_(m.weight, 0, 0.01)
-        nn.init.constant_(m.bias, 0)
+        if m.bias is not None:
+            nn.init.constant_(m.bias, 0)
 
 
 def _randomize_model_weights(model: nn.Module) -> nn.Module:
@@ -316,7 +317,9 @@ def cascading_randomization_test(
 
     # Define layer order from output to input for PrismNet
     # Based on forward pass: conv -> se -> res2d -> avgpool -> res1d -> gpool -> fc
-    # Cascading order (output to input): fc -> gpool -> res1d -> avgpool -> res2d -> se -> conv
+    # Cascading order (output to input): fc -> res1d -> res2d -> se -> conv
+    # Note: avgpool (AvgPool2d) and gpool (AdaptiveAvgPool1d) are excluded because
+    # they are parameterless pooling operations with no learnable weights to randomize.
     layer_names = ["fc", "res1d", "res2d", "se", "conv"]
 
     results = {}

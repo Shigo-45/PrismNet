@@ -85,12 +85,12 @@ def classify_result(tvr_ssim: float, rvr_ssim: float,
         Classification: "strong_pass", "moderate_pass", "weak", or "fail"
     """
     # Check for NaN
-    if np.isnan(rvr_ssim) or np.isnan(rvr_spearman):
+    if (np.isnan(tvr_ssim) or np.isnan(tvr_spearman)
+            or np.isnan(rvr_ssim) or np.isnan(rvr_spearman)):
         return "weak"
 
     # Calculate ratios
     ssim_ratio = tvr_ssim / rvr_ssim if rvr_ssim != 0 else float('inf')
-    spearman_ratio = tvr_spearman / rvr_spearman if rvr_spearman != 0 else float('inf')
 
     # Strong pass: Clear divergence
     if tvr_ssim < 0.1 and tvr_spearman < 0.2 and ssim_ratio < 0.7:

@@ -62,14 +62,18 @@ def load_checkpoint(checkpoint_path: Path) -> Dict:
         Checkpoint data with sets for completed/failed/skipped
     """
     if checkpoint_path.exists():
-        with open(checkpoint_path) as f:
-            data = json.load(f)
-            # Convert lists back to sets
-            return {
-                "completed": set(data.get("completed", [])),
-                "failed": set(data.get("failed", [])),
-                "skipped": set(data.get("skipped", [])),
-            }
+        try:
+            with open(checkpoint_path) as f:
+                data = json.load(f)
+        except json.JSONDecodeError as e:
+            print(f"Warning: Checkpoint file is corrupted ({e}). Starting fresh.")
+            return {"completed": set(), "failed": set(), "skipped": set()}
+        # Convert lists back to sets
+        return {
+            "completed": set(data.get("completed", [])),
+            "failed": set(data.get("failed", [])),
+            "skipped": set(data.get("skipped", [])),
+        }
     return {"completed": set(), "failed": set(), "skipped": set()}
 
 
@@ -307,9 +311,11 @@ def main():
         if result["status"] == "success":
             print(f"✓ Success: {protein} ({result['elapsed_time']:.1f}s)")
             completed.add(protein)
+            failed.discard(protein)
         elif result["status"] == "success_no_results":
             print(f"⚠ Success but no results: {protein}")
             completed.add(protein)
+            failed.discard(protein)
         else:
             print(f"✗ {result['status'].title()}: {protein}")
             failed.add(protein)
