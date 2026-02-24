@@ -14,8 +14,7 @@ exp/*
 docs/*
 !exp/prismnet/
 !exp/logistic_reg/
-!exp/IGF2BP1_infer/
-!exp/IGF2BP1_infer/**
+
 icSHAPE/*
 visualization/figures/
 visualization/
