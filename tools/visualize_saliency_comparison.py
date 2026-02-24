@@ -5,9 +5,7 @@ Visualize saliency maps and HARs side-by-side for plain CNN vs PrismNet.
 
 import numpy as np
 import matplotlib.pyplot as plt
-import matplotlib.patches as patches
 from matplotlib.gridspec import GridSpec
-import sys
 
 def load_saliency_data(filepath, n_samples=10):
     """Load saliency data and parse saliency matrices."""
@@ -242,10 +240,10 @@ def main():
         plot_comparison(plain_sal, prism_sal, plain_har, prism_har, idx, output_file)
 
     print(f"\n✓ Generated 15 comparison plots in {output_dir}/")
-    print(f"\nVisualization categories:")
-    print(f"  - high_overlap_*.png: Models agree on attention location")
-    print(f"  - close_different_*.png: Similar but distinct attention patterns")
-    print(f"  - far_apart_*.png: Completely different attention locations")
+    print("\nVisualization categories:")
+    print("  - high_overlap_*.png: Models agree on attention location")
+    print("  - close_different_*.png: Similar but distinct attention patterns")
+    print("  - far_apart_*.png: Completely different attention locations")
 
 if __name__ == '__main__':
     main()

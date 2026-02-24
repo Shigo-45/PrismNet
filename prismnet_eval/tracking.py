@@ -1,12 +1,10 @@
 """MLflow experiment tracking integration."""
 
-import json
 from pathlib import Path
-from typing import Any, Optional
+from typing import Optional
 
 try:
     import mlflow
-    from mlflow.tracking import MlflowClient
 
     MLFLOW_AVAILABLE = True
 except ImportError:

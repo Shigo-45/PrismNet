@@ -16,7 +16,6 @@ import torch.optim as optim
 
 from prismnet.loader import SeqicSHAPE
 from prismnet.model.utils import GradualWarmupScheduler
-from prismnet.utils import datautils
 
 from .config import AblationConfig, BaselineConfig
 from .variants import create_ablated_model

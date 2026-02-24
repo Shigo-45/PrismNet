@@ -13,7 +13,6 @@ Usage:
 """
 
 import argparse
-import json
 import sys
 from pathlib import Path
 
@@ -190,7 +189,7 @@ def main():
         mode=args.mode,
     )
 
-    print(f"\nTraining config:")
+    print("\nTraining config:")
     print(f"  lr: {training_config.lr}")
     print(f"  batch_size: {training_config.batch_size}")
     print(f"  epochs: {training_config.nepochs}")

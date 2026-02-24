@@ -1,7 +1,7 @@
 """Ablation experiment configurations."""
 
-from dataclasses import dataclass, field
-from typing import Callable, Optional
+from dataclasses import dataclass
+from typing import Callable
 import torch.nn as nn
 
 
@@ -134,8 +134,8 @@ class BaselineConfig:
         }
 
 
-# Import baseline models
-from .baselines import PlainCNN2D1D, PlainCNN2D, BiLSTMBaseline, BiGRUBaseline
+# Import baseline models (after dataclass definitions to avoid forward reference issues)
+from .baselines import PlainCNN2D1D, PlainCNN2D, BiLSTMBaseline, BiGRUBaseline  # noqa: E402
 
 
 # Baseline model configurations

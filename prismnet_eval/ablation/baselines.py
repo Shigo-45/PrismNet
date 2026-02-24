@@ -169,7 +169,6 @@ class BiLSTMBaseline(nn.Module):
     def forward(self, x):
         # Input: (batch, 1, 101, 5)
         # Reshape to (batch, 101, 5) for LSTM
-        batch_size = x.size(0)
         x = x.squeeze(1)  # (batch, 101, 5)
 
         # LSTM forward
@@ -234,7 +233,6 @@ class BiGRUBaseline(nn.Module):
     def forward(self, x):
         # Input: (batch, 1, 101, 5)
         # Reshape to (batch, 101, 5) for GRU
-        batch_size = x.size(0)
         x = x.squeeze(1)  # (batch, 101, 5)
 
         # GRU forward
@@ -284,7 +282,7 @@ if __name__ == "__main__":
                 out = model(x)
             assert out.shape == (8, 1), f"Expected shape (8, 1), got {out.shape}"
             print(f"  Output shape: {out.shape} ✓")
-            print(f"  Forward pass: OK ✓")
+            print("  Forward pass: OK ✓")
         except Exception as e:
             print(f"  Forward pass: FAILED - {e}")
 

@@ -19,7 +19,6 @@ Output files:
 
 import argparse
 import json
-import os
 import sys
 from pathlib import Path
 from typing import List, Dict, Optional
@@ -33,10 +32,8 @@ from tqdm import tqdm
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from prismnet.loader import SeqicSHAPE
-from prismnet.utils import datautils
 from prismnet.model import GuidedBackpropSmoothGrad
 from prismnet_eval.ablation.config import (
-    AblationConfig,
     LEAVE_ONE_OUT_CONFIGS,
     CUMULATIVE_CONFIGS,
 )
