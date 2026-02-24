@@ -17,10 +17,11 @@ tmp/*
 !exp/prismnet/
 !exp/logistic_reg/
 icSHAPE/*
-
 docs/
-
-# Evaluation results
-evaluation/
+docs/*
 mlruns/
 .venv
+visualization/
+PROJECT_SUMMARY.md
+evaluation/
+evaluation/*

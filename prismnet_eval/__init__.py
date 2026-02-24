@@ -1,9 +1,9 @@
-"""PrismNet Evaluation Framework.
+"""PrismNet evaluation framework.
 
-This package provides tools for evaluating PrismNet:
-- ablation: Module ablation experiments
-- splitting: Homology-aware data splitting (separate branch)
-- saliency: Saliency map sanity checks (separate branch)
+This package provides evaluation tools for PrismNet models including:
+- Module ablation experiments
+- Homology-aware data splitting
+- Saliency sanity checks
 """
 
 __version__ = "0.1.0"

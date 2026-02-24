@@ -25,3 +25,12 @@ eval = [
 
 [project.scripts]
 prismnet-ablation = "tools.eval_ablation:main"
+    "mlflow>=2.10",
+    "biopython>=1.80",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+    "scikit-image>=0.20",
+]
