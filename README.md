@@ -71,7 +71,7 @@ tools/gdata_bin.sh
 
 To train one single protein model from scratch, run
 ```
-exp/EXP_NAME/train.sh pu PrismNet TIA1_Hela clip_data 
+exp/EXP_NAME/train.sh TIA1_Hela clip_data 
 ```
 where you replace `TIA1_Hela` with the name of the data file you want to use, you replace EXP_NAME with a specific name of this experiment. Hyper-parameters could be tuned in `exp/prismnet/train.sh`. For available training options, please take a look at `tools/train.py`.
 
